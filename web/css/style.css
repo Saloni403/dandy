@@ -21,7 +21,8 @@ a {
 /* BANNER MAIN */
 
 .bannermain,
-.bannermain2 {
+.bannermain2,
+.bannermain3{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -29,26 +30,30 @@ a {
   color: #fff;
 }
 .bannermain {
-  background-image: url(../images/b1.jpg);
+  background-image: url(../images/WhatsApp\ Image\ 2025-08-27\ at\ 4.43.17\ PM.jpeg);
 }
 .bannermain2 {
   background-image: url(../images/b1.jpg);
 }
-.bannermain > div {
-  background-image: linear-gradient(
+.bannermain3{
+    background-image: url(../images/WhatsApp\ Image\ 2025-08-27\ at\ 4.43.17\ PM\ \(1\).jpeg);
+}
+.bannermain > div, .bannermain2 > div, .bannermain3 > div  {
+  /* background-image: linear-gradient(
     to bottom right,
-    rgba(236, 72, 153, 0.7) 0%,
-    rgba(217, 70, 239, 0.7) 50%,
-    rgba(99, 102, 241, 0.7) 100%
-  );
+    rgba(236, 72, 153, 0.2) 0%,
+    rgba(217, 70, 239, 0.2) 50%,
+    rgba(99, 102, 241, 0.2) 100%
+  ); */
+  background-color: rgba(0, 0, 0, 0.2);
   height: 100%;
   width: 100%;
 }
-.bannermain2 > div {
+/* .bannermain2 > div, .bannermain3 > div  {
   height: 100%;
   width: 100%;
-}
-.bannermain2 .mbnrtxt {
+} */
+.bannermain2 .mbnrtxt, .bannermain3 .mbnrtxt {
   width: 50%;
 }
 .mbnrtxt {
@@ -130,7 +135,9 @@ a {
     margin: 6rem 0 3rem 0;
   }
   .bannermain,
-  .bannermain2 {
+  .bannermain2,
+  .bannermain3
+   {
     height: auto;
   }
   .ctgbtn a {
@@ -140,7 +147,7 @@ a {
   .mbnrtxt p {
     font-size: 14px;
   }
-  .bannermain2 .mbnrtxt {
+  .bannermain2 .mbnrtxt , .bannermain3 .mbnrtxt{
     width: 60%;
   }
 }
@@ -149,7 +156,7 @@ a {
   .mbnrtxt h1 {
     font-size: 2rem;
   }
-  .bannermain2 .mbnrtxt {
+  .bannermain2 .mbnrtxt, .bannermain3 .mbnrtxt {
     width: 100%;
   }
 }
@@ -215,10 +222,10 @@ a {
 }
 .menu ul li:hover a,
 .topnav ul li:hover a {
-  color: rgba(221, 61, 141, 0.8);
+  color: rgb(251, 4, 127);
 }
 .activenav {
-  color: rgba(221, 61, 141, 0.8) !important;
+  color: rgb(251, 4, 127) !important;
 }
 
 
@@ -330,7 +337,7 @@ color: rgb(76, 76, 76);
 }
 .crdbtn p {
   color: purple;
-  font-size: 1.1rem;
+  font-size: 14px;
 }
 .crdbtn button {
   padding: 0.5rem 1rem;
@@ -370,6 +377,7 @@ color: rgb(76, 76, 76);
   position: relative;
   background-color: #fff;
 }
+
 .extra {
   position: absolute;
   top: 1rem;
@@ -395,6 +403,7 @@ color: rgb(76, 76, 76);
   border-radius: 30px;
   padding: 8px 16px;
   width: fit-content;
+  margin-bottom: 1rem;
 
   /* Solid white background inside */
   background: #fff;
@@ -445,14 +454,17 @@ color: rgb(76, 76, 76);
 
 /* footer */
 footer {
-  background-color: rgb(59, 144, 144);
+  /* background-color: #2C3E50; */
+  background-color: mintcream;
+  color: #000;
 }
 .fdivleft {
-  background-color: #ffffff43;
+  background-color: #aeacac33;
   padding: 1.5rem;
 }
 .fdivleft h5 {
   color: rgba(178, 37, 108, 0.8);
+   /* color: rgba(9, 9, 9, 0.6); */
 }
 .cntdiv > div:nth-child(1) {
   border: none;
@@ -461,6 +473,7 @@ footer {
   border-radius: 30px;
   margin-right: 1.5rem;
   width: fit-content;
+  color: #fff;
 }
 .cntdiv > div:nth-child(2) {
   border: none;
@@ -493,4 +506,8 @@ footer {
 }
 .qlinks a {
   color: #fff;
+  margin: 0 1rem;
+}
+.qlinks a:hover {
+   color: rgb(251, 4, 127);
 }

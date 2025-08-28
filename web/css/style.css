@@ -179,12 +179,12 @@ a {
 /* NAVBAR MAIN */
 .topnav {
   position: fixed;
-  top: 4rem;
+  top: 3.5rem;
   /* width: calc(100% - 2rem); */
   width: 100%;
   padding: 1rem 0;
   z-index: 99;
-  background-color: transparent;
+  background-color: rgb(0, 0, 0);
 }
 @media (max-width: 767px) {
   .topnav {
@@ -205,9 +205,9 @@ a {
 }
 .topnav.scrolled {
   top: 0;
-  /* background-color: rgba(0, 0, 0, 0.8); */
-  background-color: rgba(0, 0, 0, 0.271);
-  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.8);
+  /* background-color: rgba(0, 0, 0, 0.271);
+  backdrop-filter: blur(10px); */
 }
 .topnav ul li:hover a {
   color: rgb(251, 4, 127);
@@ -226,6 +226,7 @@ display: none;
 position: absolute;
 width: 200px;
 left: 0;  
+/* margin-top: 1rem; */
 background-color: #fff;
 /* padding: 1rem !important; */
 transition: 0.3s;
@@ -284,9 +285,26 @@ color: #fff;
 .activemenu a{
   color: #fff !important;
 }
-
-
-
+/* .menu .bi-caret-right-fill{
+color:rgb(251, 4, 127);
+} */
+.menu .sublist {
+  display: none;
+  transition: 0.3s;
+}
+.menu .sublist.active {
+  display: block;
+  margin-top: 0;
+}
+.menu .sublist li a{
+color: rgb(251, 4, 127) !important;
+}
+.menu .sublist li:hover{
+  background-color: rgb(251, 4, 127);
+}
+.menu .sublist li:hover a{
+ color: #fff !important;
+}
 /* shop by */
 
 .shopby .crdtxt h4 {
@@ -333,6 +351,11 @@ text-decoration: underline;
 }
 .occrd:hover .crdlikebtn{
    visibility: visible;
+}
+@media (max-width:768px) {
+  .crdlikebtn{
+    visibility: visible;
+  }
 }
 .occrd{
     margin: 0 0.25rem;
@@ -563,8 +586,70 @@ footer {
 }
 .qlinks a {
   color: #fff;
-
+margin-left: 1.5rem;
 }
 .qlinks a:hover {
    color: rgb(251, 4, 127);
+}
+
+/* slick slider */
+      .slick-prev,
+      .slick-next {
+        top: 0;
+      }
+      .slick-prev {
+        right: 5rem !important;
+        left: auto;
+      }
+      .slick-next {
+        right: 3rem !important;
+      }
+      .slick-prev:before,
+      .slick-next:before {
+        color: #000;
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* small kids */
+.items small{
+  color: #999;
+  font-weight: normal;
+}
+.addtocard button{
+  margin-top: 0.5rem;
+  background-color: #000;
+  color: #fff;
+width: 100%;
 }

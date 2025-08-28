@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="web/css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+      integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+</head>
+
+<body>
+  <!-- top nav -->
+  <section class="topnav sticky-top">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between">
+        <div>
+          <img src="web/images/final_logo-removebg-preview.png" width="80" alt="" />
+        </div>
+        <div class="d-none d-md-block navlist">
+          <ul class="d-flex align-items-center justify-content-center">
+            <li><a href="" class="activenav">Home</a></li>
+            <li class="droplist">
+              <a href="#">Collections<i class="bi bi-caret-right-fill"></i></a>
+              <ul class="sublist">
+                <li><a href="">0-5 years kids</a></li>
+                <li><a href="">5-12 years kids</a></li>
+                <li><a href="">Women</a></li>
+                <li><a href="">Men</a></li>
+              </ul>
+            </li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li>
+              <a href=""><i class="bi bi-cart-check"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="bi bi-heart"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="bi bi-person-circle"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="d-md-none mview">
+          <i class="bi bi-list menuopen" style="font-size: 1.5rem; color: #fff"></i>
+          <a href=""><i class="bi bi-cart-check" style="font-size: 1.5rem; color: #fff"></i></a>
+          <a href=""><i class="bi bi-heart" style="font-size: 1.5rem; color: #fff"></i></a>
+          <a href=""><i class="bi bi-person-circle" style="font-size: 1.5rem; color: #fff"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- menu -->
+  <section class="menu d-md-none">
+    <div>
+      <div class="d-flex align-items-center justify-content-between p-3"
+        style="background-color: rgb(251, 4, 127); color: #fff">
+        <p class="mb-0">Menu</p>
+        <i class="bi bi-x-lg menuclose"></i>
+      </div>
+
+      <ul>
+        <li class="activemenu"><a href="">Home</a></li>
+
+        <li class="droplist">
+          <a href="#">Collections</a><i class="bi bi-caret-right-fill"></i>
+        </li>
+        <ul class="sublist">
+          <li><a href="">0-5 years kids</a></li>
+          <li><a href="">5-12 years kids</a></li>
+          <li><a href="">Women</a></li>
+          <li><a href="">Men</a></li>
+        </ul>
+
+        <li><a href="">About Us</a></li>
+
+        <li><a href="">Contact Us</a></li>
+
+        <li>
+          <a href=""><i class="bi bi-cart-check"></i> Cart</a>
+        </li>
+
+        <li>
+          <a href=""><i class="bi bi-heart"></i> Liked</a>
+        </li>
+
+        <li>
+          <a href=""><i class="bi bi-person-circle"></i> Login</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+<!-- category -->
+ <style>
+  .ctg img{
+    border-radius: 50%;
+    border: 4px solid rgb(28, 174, 180);
+    position: relative;
+    top: 0;
+  }
+ </style>
+ <section class="ctg my-5 ">
+  <div class="container">
+    <div class="row autoplay" style="position: relative;">
+      <div class="col-2">
+        <div class="">
+          <img src="web/images/ctg1.webp" class="img-fluid" alt="">
+        </div>
+      </div>
+       <div class="col-2">
+        <div class="">
+          <img src="web/images/ctg1.webp" class="img-fluid" alt="">
+        </div>
+      </div>
+       <div class="col-2">
+        <div class="">
+          <img src="web/images/ctg1.webp" class="img-fluid" alt="">
+        </div>
+      </div>
+       <div class="col-2">
+        <div class="">
+          <img src="web/images/ctg1.webp" class="img-fluid" alt="">
+        </div>
+      </div>
+       <div class="col-2">
+        <div class="">
+          <img src="web/images/ctg1.webp" class="img-fluid" alt="">
+        </div>
+      </div>
+      
+    </div>
+    <div style="position: absolute;z-index: -1; left: 0; transform: translateY(-100%); background-color: #95cbdd7a; height: 100px; width: 100%;"></div>
+  </div>
+ </section>
+
+  <!-- items -->
+  <style>
+    .breadcrumb a {
+      color: #000;
+    }
+    .accordion-body > div{
+border-bottom: 2px solid black;
+padding: 1rem 0;
+    }
+  </style>
+  <section class="mt-5 items">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Collections</a></li>
+          <li class="breadcrumb-item active" aria-current="page">
+            0-5 years Kids
+          </li>
+        </ol>
+      </nav>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="" style="position: sticky; top: 100px">
+            <h4>FILTER</h4>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    Category
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div>
+                      <input type="checkbox" value="" id="CasualShirts" />
+                      <label for="CasualShirts">
+                        Casual Shirts
+                      </label>
+                    </div>
+                    <div>
+                      <input type="checkbox" value="" id="TShirts" />
+                      <label for="TShirts">
+                        T-Shirts
+                      </label>
+                    </div>
+                    <div>
+
+                      <input type="checkbox" value="" id="Kurtas" />
+                      <label for="Kurtas">
+                        Kurtas
+                      </label>
+                    </div>
+                    <div>
+                      <input type="checkbox" value="" id="Sweatshirts" />
+                      <label for="Sweatshirts">
+                        Sweatshirts
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Size
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div>
+                      <input type="checkbox" value="" id="s" />
+                      <label for="s">
+                        S
+                      </label>
+                    </div>
+                    <div>
+                      <input type="checkbox" value="" id="m" />
+                      <label for="m">
+                        M
+                      </label>
+                    </div>
+                    <div>
+                      <input type="checkbox" value="" id="l" />
+                      <label for="l">
+                        L
+                      </label>
+                    </div>
+                    <div>
+                      <input type="checkbox" value="" id="xl" />
+                      <label for="xl">
+                        XL
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Price
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <label for="range4" class="form-label">Price range</label>
+                    <!-- <input type="range" class="form-range" min="500" max="1500" value="500" id="range4">
+                        <output for="range4" id="rangeValuemax" aria-hidden="true"></output> -->
+                    <!-- <output for="range4" id="rangeValue" aria-hidden="true"></output> -->
+
+                    <input type="range" class="form-range" min="500" max="1500" value="500" id="range-min">
+                    <input type="range" class="form-range" min="500" max="1500" value="1500" id="range-max">
+
+                    <p class="mt-2">
+                      Min: <output id="minVal"></output> |
+                      Max: <output id="maxVal"></output>
+                    </p>
+                  </div>
+
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Discount
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <label for="range4" class="form-label">Discount range</label>
+                    <!-- <input type="range" class="form-range" min="500" max="1500" value="500" id="range4">
+                        <output for="range4" id="rangeValuemax" aria-hidden="true"></output> -->
+                    <!-- <output for="range4" id="rangeValue" aria-hidden="true"></output> -->
+
+                    <input type="range" class="form-range" min="0" max="100" value="0" id="dis-min">
+                    <input type="range" class="form-range" min="0" max="100" value="100" id="dis-max">
+
+                    <p class="mt-2">
+                      Min: <output id="mindis"></output> |
+                      Max: <output id="maxdis"></output>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <h4>
+            Top Wear Bundle <small class=""><span>200</span> items</small>
+          </h4>
+          <div class="row g-1">
+            <div class="col-lg-3 col-md-4 col-6">
+              <div class="occrd">
+                <div class="crdimgs">
+                  <img src="web/images/shopby/kid.jpg" class="img-fluid imgback" alt="" />
+                  <img src="web/images/shopby/xskid.webp" class="img-fluid imgtop" alt="" />
+                  <i class="bi bi-heart crdlikebtn"></i>
+                </div>
+                <div class="crdpara p-2">
+                  <p>First Love Silk Print Kimono</p>
+
+                  <p><del>₹506</del> ₹299</p>
+                  <div class="addtocard">
+                    <button>Add to card</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+              <div class="occrd">
+                <div class="crdimgs">
+                  <img src="web/images/shopby/girl.jpg" class="img-fluid imgback" alt="" />
+                  <img src="web/images/shopby/men.jpg" class="img-fluid imgtop" alt="" />
+                  <i class="bi bi-heart crdlikebtn"></i>
+                </div>
+                <div class="crdpara p-2">
+                  <p>First Love Silk Print Kimono</p>
+
+                  <p><del>₹506</del> ₹299</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+              <div class="occrd">
+                <div class="crdimgs">
+                  <img src="web/images/shopby/xskid.webp" class="img-fluid imgback" alt="" />
+                  <img src="web/images/shopby/kid.jpg" class="img-fluid imgtop" alt="" />
+                  <i class="bi bi-heart crdlikebtn"></i>
+                </div>
+                <div class="crdpara p-2">
+                  <p>First Love Silk Print Kimono</p>
+
+                  <p><del>₹506</del> ₹299</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+              <div class="occrd">
+                <div class="crdimgs">
+                  <img src="web/images/shopby/kid.jpg" class="img-fluid imgback" alt="" />
+                  <img src="web/images/shopby/xskid.webp" class="img-fluid imgtop" alt="" />
+                  <i class="bi bi-heart crdlikebtn"></i>
+                </div>
+                <div class="crdpara p-2">
+                  <p>First Love Silk Print Kimono</p>
+
+                  <p><del>₹506</del> ₹299</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+              <div class="occrd">
+                <div class="crdimgs">
+                  <img src="web/images/shopby/girl.jpg" class="img-fluid imgback" alt="" />
+                  <img src="web/images/shopby/men.jpg" class="img-fluid imgtop" alt="" />
+                  <i class="bi bi-heart crdlikebtn"></i>
+                </div>
+                <div class="crdpara p-2">
+                  <p>First Love Silk Print Kimono</p>
+
+                  <p><del>₹506</del> ₹299</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+              <div class="occrd">
+                <div class="crdimgs">
+                  <img src="web/images/shopby/xskid.webp" class="img-fluid imgback" alt="" />
+                  <img src="web/images/shopby/kid.jpg" class="img-fluid imgtop" alt="" />
+                  <i class="bi bi-heart crdlikebtn"></i>
+                </div>
+                <div class="crdpara p-2">
+                  <p>First Love Silk Print Kimono</p>
+
+                  <p><del>₹506</del> ₹299</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+              <div class="occrd">
+                <div class="crdimgs">
+                  <img src="web/images/shopby/men.jpg" class="img-fluid imgback" alt="" />
+                  <img src="web/images/shopby/girl.jpg" class="img-fluid imgtop" alt="" />
+                  <i class="bi bi-heart crdlikebtn"></i>
+                </div>
+                <div class="crdpara p-2">
+                  <p>First Love Silk Print Kimono</p>
+
+                  <p><del>₹506</del> ₹299</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+              <div class="occrd">
+                <div class="crdimgs">
+                  <img src="web/images/shopby/xskid.webp" class="img-fluid imgback" alt="" />
+                  <img src="web/images/shopby/men.jpg" class="img-fluid imgtop" alt="" />
+                  <i class="bi bi-heart crdlikebtn"></i>
+                </div>
+                <div class="crdpara p-2">
+                  <p>First Love Silk Print Kimono</p>
+
+                  <p><del>₹506</del> ₹299</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+              <div class="occrd">
+                <div class="crdimgs">
+                  <img src="web/images/shopby/girl.jpg" class="img-fluid imgback" alt="" />
+                  <img src="web/images/shopby/kid.jpg" class="img-fluid imgtop" alt="" />
+                  <i class="bi bi-heart crdlikebtn"></i>
+                </div>
+                <div class="crdpara p-2">
+                  <p>First Love Silk Print Kimono</p>
+
+                  <p><del>₹506</del> ₹299</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="py-sm-5 pt-5">
+    <div class="container">
+      <div class="mainheading">
+        <h2>Visit Us Today!</h2>
+        <p class="text-center">
+          We're conveniently located in Nangal Raya, Delhi Cantt. Come
+          experience our collections in person!
+        </p>
+      </div>
+      <div class="row mt-5" style="background-color: #aeacac33">
+        <div class="col-md-6">
+          <div class="fdivleft">
+            <h3>Store Information</h3>
+            <hr />
+            <div>
+              <h5>Address:</h5>
+              <p class="mb-0">Nangal Raya, Delhi Cantt corner shop,</p>
+              <p>110046 Opposite to Multan Jewellery shop</p>
+            </div>
+            <div>
+              <h5>Business Hours:</h5>
+              <p class="mb-0">Monday-Saturday: 10AM - 8PM</p>
+              <p>Sunday: 11AM - 6PM</p>
+            </div>
+            <div>
+              <h5>Phone Numbers:</h5>
+              <p class="mb-0">9818464679 | 9650687263</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="fdivleft">
+            <h3>Quick Contact</h3>
+            <hr />
+            <p>Have questions? Reach out to us directly:</p>
+            <div
+              class="cntdiv d-flex flex-wrap gap-3 align-items-center justify-content-xl-start justify-content-center">
+              <div class="mt-sm-0 mt-3">
+                <span> <i class="bi bi-whatsapp"></i> Whatsapp</span>
+              </div>
+              <div class="mt-sm-0 mt-3">
+                <span><i class="bi bi-telephone"></i> Call Now</span>
+              </div>
+              <div class="mt-sm-0 mt-3">
+                <span><i class="bi bi-envelope"></i> Mail Us</span>
+              </div>
+            </div>
+            <div class="fusicons mt-3">
+              <h5 class="mb-3">Follow Us:</h5>
+              <i class="bi bi-facebook" style="background-color: rgb(24, 119, 242); color: #fff"></i>
+              <i class="bi bi-twitter-x" style="background-color: rgb(255, 255, 255); color: #000"></i>
+              <i class="bi bi-instagram" style="
+                    background: linear-gradient(
+                      45deg,
+                      #f58529,
+                      #dd2a7b,
+                      #8134af,
+                      #515bd4
+                    );
+                    color: #fff;
+                  "></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <section class="bg-black text-white pt-5 pb-3">
+    <div class="container">
+      <div class="d-md-flex align-items-center justify-content-between">
+        <div class="mb-md-0 mb-4 text-md-start text-center">
+          <img src="web/images/final_logo-removebg-preview.png" width="100" alt="" />
+          <p class="mb-0">Your Family's Fashion Destination</p>
+        </div>
+
+        <div class="mb-md-0 mb-4">
+          <div
+            class="qlinks d-flex flex-wrap gap-3 align-items-center justify-content-md-between justify-content-center">
+            <a href="#">Home</a>
+            <a href="#">kids</a>
+            <a href="#">Women</a>
+            <a href="#">Men</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+          </div>
+        </div>
+        <!-- <div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1751.2990727246706!2d77.10897053868152!3d28.611829993919024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sNangal%20Raya%2C%20Delhi%20Cantt%20corner%20shop%2C%20110046%20Opposite%20to%20Multan%20Jewellery%20shop!5e0!3m2!1sen!2sin!4v1756298769201!5m2!1sen!2sin"
+              width="300"
+              height="300"
+              style="border: 0"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div> -->
+      </div>
+      <div class="text-center mt-4">
+        <p class="mb-0 text-sm">
+          © 2025 D&amp;Y Fancy Collections. All rights reserved.<a href="https://tssgtech.com/" class="text-white">
+            Design by Tssg-Tech</a>
+        </p>
+      </div>
+    </div>
+  </section>
+  <script src="web/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+    integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    // This is an example script, please modify as needed
+    const rangeInputmax = document.getElementById('range-max');
+    const rangeOutputmax = document.getElementById('maxVal');
+
+    const rangeInputmin = document.getElementById('range-min');
+    const rangeOutputmin = document.getElementById('minVal');
+
+    // Set initial value
+    rangeOutputmax.textContent = rangeInputmax.value;
+
+    rangeInputmax.addEventListener('input', function () {
+      rangeOutputmax.textContent = this.value;
+    });
+
+    rangeOutputmin.textContent = rangeInputmin.value;
+
+    rangeInputmin.addEventListener('input', function () {
+      rangeOutputmin.textContent = this.value;
+    });
+
+
+    const dismax = document.getElementById('dis-max');
+    const maxdis = document.getElementById('maxdis');
+
+    const dismin = document.getElementById('dis-min');
+    const mindis = document.getElementById('mindis');
+
+    // Set initial value
+    maxdis.textContent = dismax.value;
+
+    dismax.addEventListener('input', function () {
+      maxdis.textContent = this.value;
+    });
+
+    mindis.textContent = dismin.value;
+
+    dismin.addEventListener('input', function () {
+      mindis.textContent = this.value;
+    });
+
+      $(".autoplay").slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        responsive: [
+          {
+            breakpoint: 1200, // when screen width is <= 1024px
+            settings: {
+              slidesToShow: 5,
+            },
+          },
+          {
+            breakpoint: 992, // when screen width is <= 768px
+            settings: {
+              slidesToShow: 4,
+            },
+          },
+           {
+            breakpoint: 768, // when screen width is <= 768px
+            settings: {
+              slidesToShow: 3,
+            },
+          },
+           {
+            breakpoint: 576, // when screen width is <= 768px
+            settings: {
+              slidesToShow: 2,
+            },
+          }
+        ]
+      });
+  </script>
+</body>
+
+</html>

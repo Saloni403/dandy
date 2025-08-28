@@ -23,7 +23,7 @@ a {
 .bannermain,
 .bannermain2,
 .bannermain3{
-  background-position: center;
+  background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
   height: 80vmin;
@@ -134,12 +134,12 @@ a {
   .mbnrtxt {
     margin: 6rem 0 3rem 0;
   }
-  .bannermain,
+  /* .bannermain,
   .bannermain2,
   .bannermain3
    {
     height: auto;
-  }
+  } */
   .ctgbtn a {
     margin-bottom: 1rem;
     font-size: 14px;
@@ -148,11 +148,17 @@ a {
     font-size: 14px;
   }
   .bannermain2 .mbnrtxt , .bannermain3 .mbnrtxt{
-    width: 60%;
+    width: 70%;
   }
 }
 
 @media (max-width: 576px) {
+    .bannermain,
+  .bannermain2,
+  .bannermain3
+   {
+    height: 80vmax;
+  }
   .mbnrtxt h1 {
     font-size: 2rem;
   }
@@ -187,7 +193,7 @@ a {
 }
 .navlist ul li a i {
   display: inline-block;
-  font-size: 1.5rem !important;
+  font-size: 1.5rem ;
 }
 .topnav ul li {
   margin-left: 1.5rem;
@@ -203,6 +209,50 @@ a {
   background-color: rgba(0, 0, 0, 0.271);
   backdrop-filter: blur(10px);
 }
+.topnav ul li:hover a {
+  color: rgb(251, 4, 127);
+}
+.topnav .activenav{
+  color: rgb(251, 4, 127);
+}
+.mview i{
+margin-left: 10px;
+}
+.droplist{
+  position: relative;
+}
+.sublist{
+display: none;
+position: absolute;
+width: 200px;
+left: 0;  
+background-color: #fff;
+/* padding: 1rem !important; */
+transition: 0.3s;
+}
+.sublist li{
+  margin-left: 0 !important;
+border-bottom: 2px solid rgba(140, 139, 139, 0.64);
+  padding: 0.5rem;
+  transition: 0.3s;
+}
+.droplist:hover .sublist{
+display: block;
+}
+.sublist li:hover{
+  background-color: rgb(251, 4, 127);
+}
+.sublist li:hover a{
+ color: #fff !important;
+}
+.bi-caret-right-fill{
+  display: inline-block;
+  font-size: 1rem !important;
+  transition: 0.3s;
+}
+.droplist:hover .bi-caret-right-fill{
+transform: rotate(90deg);
+}
 /* menu */
 .menu {
   background-color: #ffffff;
@@ -215,17 +265,24 @@ a {
   transition: 0.3s ease-in-out;
 }
 .menu ul li {
-  padding: 0 1.5rem;
+  padding: 1rem;
+border-bottom: 2px solid rgba(140, 139, 139, 0.64);
 }
 .menu ul li a {
-  color: purple;
-}
-.menu ul li:hover a,
-.topnav ul li:hover a {
   color: rgb(251, 4, 127);
 }
-.activenav {
-  color: rgb(251, 4, 127) !important;
+.menu ul li:hover{
+  background-color: rgb(251, 4, 127);
+}
+.menu ul li:hover a{
+color: #fff;
+}
+
+.activemenu {
+    background-color: rgb(251, 4, 127);
+}
+.activemenu a{
+  color: #fff !important;
 }
 
 
@@ -241,7 +298,7 @@ a {
   /* text-align: center; */
   text-underline-offset: 5px;
 }
-.shopby .col-3:hover .crdtxt h4{
+.shopby .col-lg-3:hover .crdtxt h4{
 text-decoration: underline;
 }
 
@@ -459,7 +516,7 @@ footer {
   color: #000;
 }
 .fdivleft {
-  background-color: #aeacac33;
+  /* background-color: #aeacac33; */
   padding: 1.5rem;
 }
 .fdivleft h5 {
@@ -506,7 +563,7 @@ footer {
 }
 .qlinks a {
   color: #fff;
-  margin: 0 1rem;
+
 }
 .qlinks a:hover {
    color: rgb(251, 4, 127);

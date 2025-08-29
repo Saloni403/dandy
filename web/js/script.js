@@ -20,3 +20,10 @@ const subList = document.querySelector(".menu .sublist");
 dropList.addEventListener("click", () => {
   subList.classList.toggle("active");
 });
+
+document.querySelector(".bi-list-columns-reverse").addEventListener("click",()=>{
+document.querySelector("#accordionExample").classList.toggle("filteropen")
+})
+// document.querySelector(".menuopen").addEventListener("click",()=>{
+//     document.querySelector(".menu").style.right="0"
+// })

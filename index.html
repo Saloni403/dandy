@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
@@ -36,6 +37,24 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <style>
+       .slick-prev,
+      .slick-next {
+        top: 0;
+      }
+      .slick-prev {
+        right: 5rem !important;
+        left: auto;
+      }
+      .slick-next {
+        right: 3rem !important;
+      }
+      .slick-prev:before,
+      .slick-next:before {
+        color: #000;
+      }
+
+    </style>
   </head>
   <body>
     <!-- toppest nav -->
@@ -96,8 +115,8 @@
                   <li><a href="men.html">Men</a></li>
                 </ul>
               </li>
-              <li><a href="">About Us</a></li>
-              <li><a href="">Contact Us</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
               <li>
                 <a href=""><i class="bi bi-cart-check"></i></a>
               </li>
@@ -314,42 +333,7 @@
         </div>
       </div>
     </section>
-    <!-- about us -->
-    <!-- <section class="py-5 bg-light">
-      <div class="container">
-        <div class="mainheading">
-          <h2>About D&Y Fancy Collections</h2>
-        </div>
-        <div class="row mt-5 d-flex align-items-center justify-content-center">
-          <div class="col-lg-6">
-            <div>
-              <img src="web/images/banner1.avif" class="img-fluid" alt="" />
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="mt-lg-0 mt-4">
-              <h4>"Your Family's Fashion Destination"</h4>
-              <p>
-                At D&Y Fancy Collections, we believe fashionable clothing should
-                be accessible to everyone in the family. Located in Nangal Raya,
-                Delhi Cantt, we've been serving our community with quality
-                apparel since 2010.
-              </p>
-              <p>
-                Our unique pricing model ensures that whether you're shopping
-                for your toddler, teenager, or yourself, you'll find stylish
-                options at ₹500 to ₹1500. We carefully curate our collections to
-                offer the best value without compromising on quality.
-              </p>
-              <div class="bannerbtn">
-                <p class="">Shop Now</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
+   
     <!-- our collection -->
     <section class="ourcollection bg-white py-5">
       <div class="container">

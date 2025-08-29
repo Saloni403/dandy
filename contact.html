@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="web/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+      integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <!-- top nav -->
+    <section class="topnav sticky-top">
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between">
+          <div>
+            <img
+              src="web/images/final_logo-removebg-preview.png"
+              width="80"
+              alt=""
+            />
+          </div>
+          <div class="d-none d-md-block navlist">
+            <ul class="d-flex align-items-center justify-content-center">
+              <li><a href="index.html">Home</a></li>
+              <li class="droplist">
+                <a href="#"
+                  >Collections<i class="bi bi-caret-right-fill"></i
+                ></a>
+                <ul class="sublist">
+                  <li><a href="smallkids.html">0-5 years kids</a></li>
+                  <li><a href="kids.html">5-12 years kids</a></li>
+                  <li><a href="women.html">Women</a></li>
+                  <li><a href="men.html">Men</a></li>
+                </ul>
+              </li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html" class="activenav">Contact Us</a></li>
+              <li>
+                <a href=""><i class="bi bi-cart-check"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="bi bi-heart"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="bi bi-person-circle"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="d-md-none mview">
+            <i
+              class="bi bi-list menuopen"
+              style="font-size: 1.5rem; color: #fff"
+            ></i>
+            <a href=""
+              ><i
+                class="bi bi-cart-check"
+                style="font-size: 1.5rem; color: #fff"
+              ></i
+            ></a>
+            <a href=""
+              ><i class="bi bi-heart" style="font-size: 1.5rem; color: #fff"></i
+            ></a>
+            <a href=""
+              ><i
+                class="bi bi-person-circle"
+                style="font-size: 1.5rem; color: #fff"
+              ></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- menu -->
+    <section class="menu d-md-none">
+      <div>
+        <div
+          class="d-flex align-items-center justify-content-between p-3"
+          style="background-color: rgb(251, 4, 127); color: #fff"
+        >
+          <p class="mb-0">Menu</p>
+          <i class="bi bi-x-lg menuclose"></i>
+        </div>
+
+        <ul>
+          <li class="activemenu"><a href="index.html">Home</a></li>
+
+          <li class="droplist">
+            <a href="#">Collections</a><i class="bi bi-caret-right-fill"></i>
+          </li>
+          <ul class="sublist">
+            <li><a href="smallkids.html">0-5 years kids</a></li>
+            <li><a href="kids.html">5-12 years kids</a></li>
+            <li><a href="women.html">Women</a></li>
+            <li><a href="men.html">Men</a></li>
+          </ul>
+
+          <li><a href="">About Us</a></li>
+
+          <li><a href="">Contact Us</a></li>
+
+          <li>
+            <a href=""><i class="bi bi-cart-check"></i> Cart</a>
+          </li>
+
+          <li>
+            <a href=""><i class="bi bi-heart"></i> Liked</a>
+          </li>
+
+          <li>
+            <a href=""><i class="bi bi-person-circle"></i> Login</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- contact cards -->
+    <section class="cdcrd">
+      <div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1751.2990727246709!2d77.10897053868153!3d28.611829993919017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sNangal%20Raya%2C%20Delhi%20Cantt%20corner%20shop%2C%20%20110046%20Opposite%20to%20Multan%20Jewellery%20shop!5e0!3m2!1sen!2sin!4v1756469137091!5m2!1sen!2sin"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class=""
+        ></iframe>
+        <div class="container ">
+          <div >
+            <p class="text-center">
+              Need answers of your queries? Don't worry we've got your back.
+            </p>
+          </div>
+          <div class="row d-flex align-items-center justify-content-center">
+            <div class="col-lg-6 ">
+              <div
+                class="contactcrds d-flex align-items-center justify-content-center flex-column"
+              >
+                <div>
+                  <i class="bi bi-telephone"></i>
+                  <h4>Call Now</h4>
+                  <p>+91-8798798796</p>
+                </div>
+                <div>
+                  <i class="bi bi-whatsapp"></i>
+                  <h4>WhatsApp Now</h4>
+                  <p>+91-8798798796</p>
+                </div>
+                <div>
+                  <i class="bi bi-envelope"></i>
+                  <h4>Mail Now</h4>
+                  <p>info@dandygmail.com</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div
+                class="d-flex align-items-center justify-content-center flex-column mt-5 formdiv"
+              >
+                <div class="mainheading text-white">
+                  <h2>Contact Form</h2>
+                </div>
+                <form action="">
+                  <div>
+                    <input
+                      type="text"
+                      name=""
+                      id="name"
+                      placeholder="Enter Name"
+                    />
+                  </div>
+                  <div>
+                    <input
+                      type="number"
+                      name=""
+                      id="pno"
+                      placeholder="Enter Number"
+                    />
+                  </div>
+                  <div>
+                    <input
+                      type="email"
+                      name=""
+                      id="email"
+                      placeholder="Enter Mail"
+                    />
+                  </div>
+                  <div>
+                    <textarea
+                      name=""
+                      id="msg"
+                      rows="5"
+                      placeholder="Message"
+                    ></textarea>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="py-sm-5 pt-5">
+      <div class="container">
+        <div class="mainheading">
+          <h2>Visit Us Today!</h2>
+          <p class="text-center">
+            We're conveniently located in Nangal Raya, Delhi Cantt. Come
+            experience our collections in person!
+          </p>
+        </div>
+        <div class="row mt-5" style="background-color: #aeacac33">
+          <div class="col-md-6">
+            <div class="fdivleft">
+              <h3>Store Information</h3>
+              <hr />
+              <div>
+                <h5>Address:</h5>
+                <p class="mb-0">Nangal Raya, Delhi Cantt corner shop,</p>
+                <p>110046 Opposite to Multan Jewellery shop</p>
+              </div>
+              <div>
+                <h5>Business Hours:</h5>
+                <p class="mb-0">Monday-Saturday: 10AM - 8PM</p>
+                <p>Sunday: 11AM - 6PM</p>
+              </div>
+              <div>
+                <h5>Phone Numbers:</h5>
+                <p class="mb-0">9818464679 | 9650687263</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="fdivleft">
+              <h3>Quick Contact</h3>
+              <hr />
+              <p>Have questions? Reach out to us directly:</p>
+              <div
+                class="cntdiv d-flex flex-wrap gap-3 align-items-center justify-content-xl-start justify-content-center"
+              >
+                <div class="mt-sm-0 mt-3">
+                  <span> <i class="bi bi-whatsapp"></i> Whatsapp</span>
+                </div>
+                <div class="mt-sm-0 mt-3">
+                  <span><i class="bi bi-telephone"></i> Call Now</span>
+                </div>
+                <div class="mt-sm-0 mt-3">
+                  <span><i class="bi bi-envelope"></i> Mail Us</span>
+                </div>
+              </div>
+              <div class="fusicons mt-3">
+                <h5 class="mb-3">Follow Us:</h5>
+                <i
+                  class="bi bi-facebook"
+                  style="background-color: rgb(24, 119, 242); color: #fff"
+                ></i>
+                <i
+                  class="bi bi-twitter-x"
+                  style="background-color: rgb(255, 255, 255); color: #000"
+                ></i>
+                <i
+                  class="bi bi-instagram"
+                  style="
+                    background: linear-gradient(
+                      45deg,
+                      #f58529,
+                      #dd2a7b,
+                      #8134af,
+                      #515bd4
+                    );
+                    color: #fff;
+                  "
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <section class="bg-black text-white pt-5 pb-3">
+      <div class="container">
+        <div class="d-md-flex align-items-center justify-content-between">
+          <div class="mb-md-0 mb-4 text-md-start text-center">
+            <img
+              src="web/images/final_logo-removebg-preview.png"
+              width="100"
+              alt=""
+            />
+            <p class="mb-0">Your Family's Fashion Destination</p>
+          </div>
+
+          <div class="mb-md-0 mb-4">
+            <div
+              class="qlinks d-flex flex-wrap gap-3 align-items-center justify-content-center"
+            >
+              <a href="#">Home</a>
+              <a href="#">kids</a>
+              <a href="#">Women</a>
+              <a href="#">Men</a>
+              <a href="#">About Us</a>
+              <a href="#">Contact Us</a>
+              <a href="#">Return Policy</a>
+              <a href="">Privacy Policy</a>
+              <a href="">Shipping Policy</a>
+            </div>
+          </div>
+          <!-- <div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1751.2990727246706!2d77.10897053868152!3d28.611829993919024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sNangal%20Raya%2C%20Delhi%20Cantt%20corner%20shop%2C%20110046%20Opposite%20to%20Multan%20Jewellery%20shop!5e0!3m2!1sen!2sin!4v1756298769201!5m2!1sen!2sin"
+              width="300"
+              height="300"
+              style="border: 0"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div> -->
+        </div>
+        <div class="text-center mt-4">
+          <p class="mb-0 text-sm">
+            © 2025 D&amp;Y Fancy Collections. All rights reserved.<a
+              href="https://tssgtech.com/"
+              class="text-white"
+            >
+              Design by Tssg-Tech</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script src="web/js/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+      integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>

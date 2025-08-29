@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,8 +20,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
       integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <style>
+         .slick-prev,
+      .slick-next {
+        top: -16px;
+      }
+      .slick-prev {
+        right: 5rem !important;
+        left: auto;
+      }
+      .slick-next {
+        right: 3rem !important;
+      }
+      .slick-prev:before,
+      .slick-next:before {
+        color: #000;
+      }
+
+      </style>
   </head>
-</head>
 
 <body>
   <!-- top nav -->
@@ -38,18 +50,18 @@
         </div>
         <div class="d-none d-md-block navlist">
           <ul class="d-flex align-items-center justify-content-center">
-            <li><a href="" class="activenav">Home</a></li>
+            <li><a href="index.html" >Home</a></li>
             <li class="droplist">
-              <a href="#">Collections<i class="bi bi-caret-right-fill"></i></a>
+              <a href="#" class="activenav">Collections<i class="bi bi-caret-right-fill"></i></a>
               <ul class="sublist">
-                <li><a href="">0-5 years kids</a></li>
+                <li><a href="smallkids.html">0-5 years kids</a></li>
                 <li><a href="">5-12 years kids</a></li>
                 <li><a href="">Women</a></li>
                 <li><a href="">Men</a></li>
               </ul>
             </li>
-            <li><a href="">About Us</a></li>
-            <li><a href="">Contact Us</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
             <li>
               <a href=""><i class="bi bi-cart-check"></i></a>
             </li>
@@ -116,47 +128,63 @@
  <style>
   .ctg img{
     border-radius: 50%;
-    border: 4px solid rgb(28, 174, 180);
+    /* border: 4px solid rgb(28, 174, 180); */
+    border: 4px solid maroon;
     position: relative;
+    box-shadow: 5px 5px 15px rgb(152, 152, 152);
     top: 0;
+  }
+  .ctg p{
+    text-align: center;
+    color: maroon;
+    margin-bottom: 0;
+    margin-top: 0.5rem;
   }
  </style>
  <section class="ctg my-5 ">
   <div class="container">
     <div class="row autoplay" style="position: relative;">
       <div class="col-2">
-        <div class="">
+        <div class="mx-2">
           <img src="web/images/ctg1.webp" class="img-fluid" alt="">
+          <p>Latest</p>
         </div>
       </div>
        <div class="col-2">
-        <div class="">
+        <div class="mx-2">
           <img src="web/images/ctg1.webp" class="img-fluid" alt="">
+          <p>Bestseller</p>
         </div>
       </div>
        <div class="col-2">
-        <div class="">
+        <div class="mx-2">
           <img src="web/images/ctg1.webp" class="img-fluid" alt="">
+          <p>Occasionally</p>
         </div>
       </div>
        <div class="col-2">
-        <div class="">
+        <div class="mx-2">
           <img src="web/images/ctg1.webp" class="img-fluid" alt="">
+          <p>Combo</p>
         </div>
       </div>
        <div class="col-2">
-        <div class="">
+        <div class="mx-2">
           <img src="web/images/ctg1.webp" class="img-fluid" alt="">
+          <p>Shirts</p>
         </div>
       </div>
       
     </div>
-    <div style="position: absolute;z-index: -1; left: 0; transform: translateY(-100%); background-color: #95cbdd7a; height: 100px; width: 100%;"></div>
+    <div style="position: absolute;z-index: -1; left: 0; transform: translateY(-100%); background-color: #f5fffa; height: 150px; width: 100%;"></div>
   </div>
  </section>
 
   <!-- items -->
   <style>
+    .items{
+      background-color: #fff;
+    }
     .breadcrumb a {
       color: #000;
     }
@@ -164,8 +192,35 @@
 border-bottom: 2px solid black;
 padding: 1rem 0;
     }
+     @media (min-width:992px) {
+.filterdiv{
+  position: sticky;
+  top: 0;
+}
+ #accordionExample{
+           
+            height: 100vh;
+            background-color: #fff;
+           /* z-index: 3000; */
+        }
+          }
+        @media (max-width:991px) {
+           #accordionExample{
+            position: fixed;
+            right: -350px;
+            top: 0;
+            width: 280px;
+            height: 100vh;
+            background-color: #fff;
+           z-index: 3000;
+           transition: 0.3s;
+        }
+         #accordionExample.filteropen{
+            right: 0;
+        }
+        }
   </style>
-  <section class="mt-5 items">
+  <section class="py-5 items">
     <div class="container">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
@@ -176,11 +231,12 @@ padding: 1rem 0;
           </li>
         </ol>
       </nav>
-      <div class="row">
-        <div class="col-sm-3">
-          <div class="" style="position: sticky; top: 100px">
-            <h4>FILTER</h4>
+      <div class="row ">
+        <div class="col-lg-3">
+          <div class="filterdiv">
+            <h4><i class="bi bi-list-columns-reverse d-lg-none"></i> FILTER</h4>
             <div class="accordion" id="accordionExample">
+              <div class="d-lg-none ms-4 mt-4 " style="font-weight: bold;">FILTER</div>
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -263,18 +319,9 @@ padding: 1rem 0;
                 </h2>
                 <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <label for="range4" class="form-label">Price range</label>
-                    <!-- <input type="range" class="form-range" min="500" max="1500" value="500" id="range4">
-                        <output for="range4" id="rangeValuemax" aria-hidden="true"></output> -->
-                    <!-- <output for="range4" id="rangeValue" aria-hidden="true"></output> -->
-
-                    <input type="range" class="form-range" min="500" max="1500" value="500" id="range-min">
-                    <input type="range" class="form-range" min="500" max="1500" value="1500" id="range-max">
-
-                    <p class="mt-2">
-                      Min: <output id="minVal"></output> |
-                      Max: <output id="maxVal"></output>
-                    </p>
+                    <label for="range1" class="form-label">Price range</label>
+                    <input type="range" class="form-range" min="500" max="1500" value="1500" id="range1">
+                        <output for="range1" id="rangeValuemax" aria-hidden="true"></output>
                   </div>
 
                 </div>
@@ -288,29 +335,20 @@ padding: 1rem 0;
                 </h2>
                 <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <label for="range4" class="form-label">Discount range</label>
-                    <!-- <input type="range" class="form-range" min="500" max="1500" value="500" id="range4">
-                        <output for="range4" id="rangeValuemax" aria-hidden="true"></output> -->
-                    <!-- <output for="range4" id="rangeValue" aria-hidden="true"></output> -->
-
-                    <input type="range" class="form-range" min="0" max="100" value="0" id="dis-min">
-                    <input type="range" class="form-range" min="0" max="100" value="100" id="dis-max">
-
-                    <p class="mt-2">
-                      Min: <output id="mindis"></output> |
-                      Max: <output id="maxdis"></output>
-                    </p>
+                    <label for="range2" class="form-label">Discount range</label>
+                    <input type="range" class="form-range" min="0" max="100" value="100" id="range2">
+                        <output for="range2" id="disValuemax" aria-hidden="true"></output>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-sm-9">
+        <div class="col-lg-9 mt-lg-0 mt-4">
           <h4>
             Top Wear Bundle <small class=""><span>200</span> items</small>
           </h4>
-          <div class="row g-1">
+          <div class="row gx-1 gy-3">
             <div class="col-lg-3 col-md-4 col-6">
               <div class="occrd">
                 <div class="crdimgs">
@@ -339,6 +377,9 @@ padding: 1rem 0;
                   <p>First Love Silk Print Kimono</p>
 
                   <p><del>₹506</del> ₹299</p>
+                   <div class="addtocard">
+                    <button>Add to card</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -353,6 +394,9 @@ padding: 1rem 0;
                   <p>First Love Silk Print Kimono</p>
 
                   <p><del>₹506</del> ₹299</p>
+                   <div class="addtocard">
+                    <button>Add to card</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -367,6 +411,9 @@ padding: 1rem 0;
                   <p>First Love Silk Print Kimono</p>
 
                   <p><del>₹506</del> ₹299</p>
+                   <div class="addtocard">
+                    <button>Add to card</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -381,6 +428,9 @@ padding: 1rem 0;
                   <p>First Love Silk Print Kimono</p>
 
                   <p><del>₹506</del> ₹299</p>
+                   <div class="addtocard">
+                    <button>Add to card</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -395,6 +445,9 @@ padding: 1rem 0;
                   <p>First Love Silk Print Kimono</p>
 
                   <p><del>₹506</del> ₹299</p>
+                   <div class="addtocard">
+                    <button>Add to card</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -409,6 +462,9 @@ padding: 1rem 0;
                   <p>First Love Silk Print Kimono</p>
 
                   <p><del>₹506</del> ₹299</p>
+                   <div class="addtocard">
+                    <button>Add to card</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -423,6 +479,9 @@ padding: 1rem 0;
                   <p>First Love Silk Print Kimono</p>
 
                   <p><del>₹506</del> ₹299</p>
+                   <div class="addtocard">
+                    <button>Add to card</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -437,6 +496,9 @@ padding: 1rem 0;
                   <p>First Love Silk Print Kimono</p>
 
                   <p><del>₹506</del> ₹299</p>
+                   <div class="addtocard">
+                    <button>Add to card</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -562,46 +624,26 @@ padding: 1rem 0;
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script>
     // This is an example script, please modify as needed
-    const rangeInputmax = document.getElementById('range-max');
-    const rangeOutputmax = document.getElementById('maxVal');
+    const rangeInputmax = document.getElementById('range1');
+    const rangeOutputmax = document.getElementById('rangeValuemax');
 
-    const rangeInputmin = document.getElementById('range-min');
-    const rangeOutputmin = document.getElementById('minVal');
+    const disInputmin = document.getElementById('range2');
+    const disOutputmin = document.getElementById('disValuemax');
 
     // Set initial value
-    rangeOutputmax.textContent = rangeInputmax.value;
+    rangeOutputmax.textContent = "Min: 500 - Max: " + rangeInputmax.value;
 
     rangeInputmax.addEventListener('input', function () {
-      rangeOutputmax.textContent = this.value;
+      rangeOutputmax.textContent ="Min: 500 - Max: " + this.value;
     });
 
-    rangeOutputmin.textContent = rangeInputmin.value;
+    disOutputmin.textContent ="Min: 0 - Max: " + disInputmin.value;
 
-    rangeInputmin.addEventListener('input', function () {
-      rangeOutputmin.textContent = this.value;
+    disInputmin.addEventListener('input', function () {
+      disOutputmin.textContent ="Min: 0 - Max: " + this.value;
     });
 
-
-    const dismax = document.getElementById('dis-max');
-    const maxdis = document.getElementById('maxdis');
-
-    const dismin = document.getElementById('dis-min');
-    const mindis = document.getElementById('mindis');
-
-    // Set initial value
-    maxdis.textContent = dismax.value;
-
-    dismax.addEventListener('input', function () {
-      maxdis.textContent = this.value;
-    });
-
-    mindis.textContent = dismin.value;
-
-    dismin.addEventListener('input', function () {
-      mindis.textContent = this.value;
-    });
-
-      $(".autoplay").slick({
+ $(".autoplay").slick({
         slidesToShow: 6,
         slidesToScroll: 1,
         autoplay: true,
@@ -620,19 +662,21 @@ padding: 1rem 0;
             },
           },
            {
-            breakpoint: 768, // when screen width is <= 768px
+            breakpoint: 768, // when screen width is <= 1024px
             settings: {
               slidesToShow: 3,
             },
           },
-           {
+          {
             breakpoint: 576, // when screen width is <= 768px
             settings: {
               slidesToShow: 2,
             },
-          }
+          },
         ]
       });
+   
+    
   </script>
 </body>
 

@@ -262,7 +262,7 @@ transform: rotate(90deg);
   top: 0;
   width: 300px;
   height: 100vh;
-  z-index: 99;
+  z-index: 9999;
   transition: 0.3s ease-in-out;
 }
 .menu ul li {
@@ -592,42 +592,106 @@ margin-left: 1.5rem;
    color: rgb(251, 4, 127);
 }
 
-/* slick slider */
-      .slick-prev,
-      .slick-next {
-        top: 0;
-      }
-      .slick-prev {
-        right: 5rem !important;
-        left: auto;
-      }
-      .slick-next {
-        right: 3rem !important;
-      }
-      .slick-prev:before,
-      .slick-next:before {
-        color: #000;
-      }
 
 
 
 
 
 
+/* contact page */
+/* contact careds */
+.contactcrds div{
+  border: 4px solid rgb(251, 251, 251);
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  margin-top: 4rem;
+  padding: 5rem 1rem 1rem;
+  background-color: rgb(216, 82, 149);
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.314);
+}
+@media (max-width:576px) {
+  .contactcrds div{
+    width: 100%;
+  }
+}
+.contactcrds div i{
+position: absolute;
+top: 0;
+font-size: 2rem;
+background-color: #000;
+color: #fff;
+padding: 0.5rem 1rem;
+border: 4px solid #fff;
+outline: 4px solid rgb(216, 82, 149);
+border-radius: 50%;
+transform: translateY(-50%);
+}
+.contactcrds div h4{
+  color: rgb(251, 251, 251);
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.contactcrds div:hover i{
+/* transform: translateY(-50%) scale(1.1) rotate(20deg); */
+animation: anim 0.5s infinite ;
+}
+
+@keyframes anim {
+ 0%, 100%  { transform: translateY(-50%) scale(1.1) rotate(0deg); }
+  25%, 75% { transform: translateY(-50%) scale(1.1) rotate(8deg); }
+  50%      { transform: translateY(-50%) scale(1.1) rotate(-8deg); }
+}
 
 
+/* form */
+form{
+  width: 80%;
+}
+form input, form textarea{
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem 0;
+  border: none;
+  /* border-bottom: 4px solid #fff; */
+  color: #fff;
+  border-radius: 20px;
+  background-color: rgb(216, 82, 149);
+    box-shadow: 0 4px 12px rgba(251, 251, 251, 0.514);
+}
 
+form input::placeholder, form textarea::placeholder{
+  color: #fff;
+}
+.formdiv{
+  border: 4px solid rgb(251, 251, 251);
+  border-radius: 20px;
+  padding: 1rem 0;
+  background-color: rgba(251, 4, 127, 0.538);
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.314);
+}
+.cdcrd .container{
+  background-color: #fff;
+/* padding: 2rem; */
+padding: 1rem ;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.314);
+   overflow: hidden;
+}
 
+@media (min-width:768px) {
+  .cdcrd .container{
+ transform: translateY(-100px);
+ padding: 2rem;
 
+}
 
-
-
-
-
-
-
-
-
+}
 
 
 

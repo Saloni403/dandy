@@ -50,17 +50,18 @@
               src="web/images/dndylogo.png"
               width="100"
               alt=""
+              onclick="location.href='index.html'"
             />
           </div>
           <div class="d-none d-lg-block navlist">
             <ul class="d-flex align-items-center justify-content-center">
-              <li ><a href="index.html" class="activenav" >Home</a></li>
-              <li class="droplist"><a href="#">Collections<i class="bi bi-caret-right-fill" ></i></a>
+              <li ><a href="index.html"  >Home</a></li>
+              <li class="droplist"><a href="#" class="activenav">Collections<i class="bi bi-caret-right-fill" ></i></a>
                 <ul class="sublist">
                   <li><a href="smallkids.html">0-5 years kids</a></li>
-                  <li><a href="#">5-12 years kids</a></li>
-                  <li><a href="#">Women</a></li>
-                  <li><a href="#">Men</a></li>
+                  <li><a href="smallkids.html">5-12 years kids</a></li>
+                  <li><a href="smallkids.html">Women</a></li>
+                  <li><a href="smallkids.html">Men</a></li>
                 </ul>
               </li>
               <li><a href="about.html">About Us</a></li>
@@ -72,15 +73,15 @@
                 <a href="addlike.html"><i class="bi bi-heart"></i></a>
               </li>
               <li>
-                <a href=""><i class="bi bi-person-circle"></i></a>
+                <a href="login.html"><i class="bi bi-person-circle"></i></a>
               </li>
             </ul>
           </div>
           <div class="d-lg-none mview">
-            <i class="bi bi-list menuopen"  style="font-size: 1.5rem; color: #000"></i>
-            <a href="cart.html"><i class="bi bi-cart-check" style="font-size: 1.5rem; color: #000"></i></a>
-            <a href="addlike.html"><i class="bi bi-heart" style="font-size: 1.5rem; color: #000"></i></a>
-             <a href=""><i class="bi bi-person-circle" style="font-size: 1.5rem; color: #000"></i></a>
+            <i class="bi bi-list menuopen"  ></i>
+            <a href="cart.html"><i class="bi bi-cart-check" ></i></a>
+            <a href="addlike.html"><i class="bi bi-heart" ></i></a>
+             <a href="login.html"><i class="bi bi-person-circle" ></i></a>
           </div>
         </div>
       </div>
@@ -96,32 +97,32 @@
       </div>
 
       <ul>
-        <li class="activemenu"><a href="">Home</a></li>
+        <li><a href="index.html'">Home</a></li>
 
-        <li class="droplist">
+        <li class="droplist activemenu">
           <a href="#">Collections</a><i class="bi bi-caret-right-fill"></i>
         </li>
         <ul class="sublist">
-          <li><a href="">0-5 years kids</a></li>
-          <li><a href="">5-12 years kids</a></li>
-          <li><a href="">Women</a></li>
-          <li><a href="">Men</a></li>
+          <li><a href="smallkids.html">0-5 years kids</a></li>
+          <li><a href="smallkids.html">5-12 years kids</a></li>
+          <li><a href="smallkids.html">Women</a></li>
+          <li><a href="smallkids.html">Men</a></li>
         </ul>
 
-        <li><a href="">About Us</a></li>
+        <li><a href="about.html">About Us</a></li>
 
-        <li><a href="">Contact Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
 
         <li>
-          <a href=""><i class="bi bi-cart-check"></i> Cart</a>
+          <a href="cart.html"><i class="bi bi-cart-check"></i> Cart</a>
         </li>
 
         <li>
-          <a href=""><i class="bi bi-heart"></i> Liked</a>
+          <a href="addlike.html"><i class="bi bi-heart"></i> Liked</a>
         </li>
 
         <li>
-          <a href=""><i class="bi bi-person-circle"></i> Login</a>
+          <a href="login.html"><i class="bi bi-person-circle"></i> Login</a>
         </li>
       </ul>
     </div>
@@ -354,18 +355,18 @@ padding: 1rem 0;
           </h4>
           <div class="row gx-1 gy-3">
             <div class="col-lg-3 col-md-4 col-6">
-              <div class="occrd" onclick="location.href='product.html'">
+              <div class="occrd" onclick="location.href='Product.html'">
                 <div class="crdimgs">
                   <img src="web/images/shopby/kid.jpg" class="img-fluid imgback" alt="" />
                   <img src="web/images/shopby/xskid.webp" class="img-fluid imgtop" alt="" />
                   <i class="bi bi-heart crdlikebtn"></i>
                 </div>
                 <div class="crdpara p-2">
-                  <p>First Love Silk Print Kimono</p>
+                  <p id="ptitle">First Love Silk Print Kimono</p>
 
-                  <p><del>₹506</del> ₹299</p>
+                  <p><del>₹506</del><span id="prate"> ₹299</span></p>
                   <div class="addtocard">
-                    <button>Add to card</button>
+                    <button onclick="addtocart()">Add to cart</button>
                   </div>
                 </div>
               </div>
@@ -382,7 +383,7 @@ padding: 1rem 0;
 
                   <p><del>₹506</del> ₹299</p>
                    <div class="addtocard">
-                    <button>Add to card</button>
+                    <button>Add to cart</button>
                   </div>
                 </div>
               </div>
@@ -399,7 +400,7 @@ padding: 1rem 0;
 
                   <p><del>₹506</del> ₹299</p>
                    <div class="addtocard">
-                    <button>Add to card</button>
+                    <button>Add to cart</button>
                   </div>
                 </div>
               </div>
@@ -416,7 +417,7 @@ padding: 1rem 0;
 
                   <p><del>₹506</del> ₹299</p>
                    <div class="addtocard">
-                    <button>Add to card</button>
+                    <button>Add to cart</button>
                   </div>
                 </div>
               </div>
@@ -433,7 +434,7 @@ padding: 1rem 0;
 
                   <p><del>₹506</del> ₹299</p>
                    <div class="addtocard">
-                    <button>Add to card</button>
+                    <button>Add to cart</button>
                   </div>
                 </div>
               </div>
@@ -450,7 +451,7 @@ padding: 1rem 0;
 
                   <p><del>₹506</del> ₹299</p>
                    <div class="addtocard">
-                    <button>Add to card</button>
+                    <button>Add to cart</button>
                   </div>
                 </div>
               </div>
@@ -467,7 +468,7 @@ padding: 1rem 0;
 
                   <p><del>₹506</del> ₹299</p>
                    <div class="addtocard">
-                    <button>Add to card</button>
+                    <button>Add to cart</button>
                   </div>
                 </div>
               </div>
@@ -484,7 +485,7 @@ padding: 1rem 0;
 
                   <p><del>₹506</del> ₹299</p>
                    <div class="addtocard">
-                    <button>Add to card</button>
+                    <button>Add to cart</button>
                   </div>
                 </div>
               </div>
@@ -501,7 +502,7 @@ padding: 1rem 0;
 
                   <p><del>₹506</del> ₹299</p>
                    <div class="addtocard">
-                    <button>Add to card</button>
+                    <button>Add to cart</button>
                   </div>
                 </div>
               </div>
@@ -581,12 +582,12 @@ padding: 1rem 0;
     </div>
   </footer>
 
-  <section class="bottom bg-black text-white pt-5 pb-3">
+   <section class="bottom bg-black text-white pt-5 pb-3">
       <div class="container">
        <div class="row mb-4">
         <div class="col-sm-4">
           <div>
-            <img src="web/images/dndylogo.png" width="100" alt="">
+            <img src="web/images/dndylogo.png"  width="100" alt="" onclick="location.href='index.html'">
             <p class="mb-0"><small>Your Family's Fashion Destination</small></p>
           </div>
         </div>
@@ -594,11 +595,11 @@ padding: 1rem 0;
           <div class="mt-sm-0 mt-4">
             <h4>Quick Links</h4>
             <ul>
-              <li><a href="">Home</a></li>
-              <li><a href="">0-5 years Kids</a></li>
-              <li><a href="">5-12 years kids</a></li>
-              <li><a href="">Women</a></li>
-              <li><a href="">Men</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="smallkids.html">0-5 years Kids</a></li>
+              <li><a href="smallkids.html">5-12 years kids</a></li>
+              <li><a href="smallkids.html">Women</a></li>
+              <li><a href="smallkids.html">Men</a></li>
 
             </ul>
           </div>
@@ -607,11 +608,11 @@ padding: 1rem 0;
           <div class="mt-sm-0 mt-4">
             <h4>Terms and Policy</h4>
             <ul>
-              <li><a href="">About Us</a></li>
-              <li><a href="">Contact Us</a></li>
-              <li><a href="">Return Policy</a></li>
-              <li><a href="">Privacy Policy</a></li>
-              <li><a href="">Shipping Policy</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="returnpolicy.html">Return Policy</a></li>
+              <li><a href="privacypolicy.html">Privacy Policy</a></li>
+              <li><a href="shippingpolicy.html">Shipping Policy</a></li>
               
             </ul>
           </div>
@@ -694,6 +695,23 @@ padding: 1rem 0;
 document.querySelector(".bi-list-columns-reverse").addEventListener("click",()=>{
 document.querySelector("#accordionExample").classList.toggle("filteropen")
 })
+
+
+
+// function addtocart(){
+// window.addEventListener("click",()=>{
+//     let imgsrc= document.querySelector(".imgtop").src;
+//     let ptitle= document.querySelector("#ptitle")
+//     let prate = document.querySelector("#prate")
+
+//     let encodeimgsrc = encodeURIComponent(imgsrc)
+//      let encodeptitle = encodeURIComponent(ptitle)
+//       let encodeprate = encodeURIComponent(prate)
+
+//     window.location.href= "cart.html?imgsrc="+encodeimgsrc+"ptitle="+encodeptitle+"prate="+encodeprate;
+// })
+// }
+
   </script>
 </body>
 

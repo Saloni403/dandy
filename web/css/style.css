@@ -179,8 +179,11 @@ a {
   width: 100%;
   padding: 1rem 0;
   z-index: 99;
-  /* background-color: rgb(0, 0, 0); */
+  /* background-color:transparent; */
   background-color: rgba(231, 238, 234, 0.855);
+}
+.topnav img{
+  cursor: pointer;
 }
 @media (max-width: 992px) {
   .topnav {
@@ -209,10 +212,15 @@ a {
   color: rgb(251, 4, 127);
 }
 .topnav .activenav{
-  color: rgb(251, 4, 127);
+  color: rgb(251, 4, 127) !important;
 }
-.mview i{
+.mview a{
 margin-left: 10px;
+font-size: 1.5rem;
+ color: #000;
+}
+.mview i:first-child{
+  font-size: 1.5rem;
 }
 .mview i:hover{
     color: rgb(251, 4, 127) !important;
@@ -266,7 +274,7 @@ transform: rotate(90deg);
 }
 .menu ul li {
   padding: 1rem;
-border-bottom: 2px solid rgba(140, 139, 139, 0.64);
+border-bottom: 2px solid rgba(140, 139, 139, 0.295);
 }
 .menu ul li a {
   color: rgb(251, 4, 127);
@@ -288,6 +296,7 @@ color: #fff;
 .menu .sublist {
   display: none;
   transition: 0.3s;
+  width: 100%;
 }
 .menu .sublist.active {
   display: block;
@@ -530,6 +539,55 @@ color: rgb(76, 76, 76);
 }
 
 /* footer */
+ .bsnshr{
+            box-shadow: 0 4px 16px grey;
+            background-color: #000000e8; color: #fff; padding: 2rem; border-radius: 10px; text-align: center; 
+          }
+          .bsnshr h2{
+            text-decoration: underline;
+            text-underline-offset: 5px;
+            margin-bottom:1rem;
+          }
+    .wic, .tic, .mic{
+      position: fixed;
+    z-index: 999;
+    }
+    .wic{
+      right: 16px;
+      bottom: 50px;
+    }
+    .wic i{
+      background-color: green;
+      color: #fff;
+      font-size: 2rem;
+      padding: 0.55rem 0.8rem;
+      border-radius: 50%;
+       box-shadow: 0 4px 16px rgba(84, 82, 82, 0.314);
+    }
+    .tic{
+      right: 16px;
+      bottom: 130px;
+    }
+     .tic i{
+      background-color: white;
+      color: blue;
+      font-size: 2rem;
+      padding: 0.45rem 0.7rem;
+      border-radius: 50%;
+       box-shadow: 0 4px 16px rgba(84, 82, 82, 0.314);
+    }
+    .mic{
+      left: 16px;
+      bottom: 50px;
+    }
+     .mic i{
+      background-color: black;
+      color: #fff;
+      font-size: 2rem;
+      padding: 0.5rem 0.75rem;
+      border-radius: 50%;
+       box-shadow: 0 4px 16px rgba(84, 82, 82, 0.314);
+    }
 footer {
   /* background-color: #2C3E50; */
   background-color: mintcream;
@@ -570,12 +628,14 @@ footer {
   margin-right: 1.5rem;
   width: fit-content;
 }
+
 .fusicons i {
+  width: fit-content;
   font-size: 1.5rem;
-  margin-right: 1.5rem;
   background-color: #ffffff3d;
-  padding: 0.35rem 0.6rem;
+  padding: 0.35rem 0.65rem;
   border-radius: 50px;
+ 
   transition: 0.3s;
 }
 .fusicons i:hover {
@@ -595,6 +655,9 @@ color: #fff;
   text-decoration: underline;
   text-underline-offset: 8px;
   margin-bottom: 1rem;
+}
+.bottom img{
+  cursor: pointer;
 }
 
 
@@ -655,10 +718,10 @@ animation: anim 0.5s infinite ;
 
 
 /* form */
-form{
+.cdcrd form{
   width: 80%;
 }
-form input, form textarea{
+.cdcrd form input, .cdcrd form textarea{
   width: 100%;
   padding: 1rem;
   margin: 1rem 0;
@@ -670,7 +733,7 @@ form input, form textarea{
     box-shadow: 0 4px 12px rgba(251, 251, 251, 0.514);
 }
 
-form input::placeholder, form textarea::placeholder{
+.cdcrd form input::placeholder, .cdcrd form textarea::placeholder{
   color: #fff;
 }
 .formdiv{
@@ -747,6 +810,10 @@ width: 100%;
       width: 80px;
       border-radius: 10px;
     }
+    .cart-item{
+      border-bottom: 2px solid rgba(156, 155, 155, 0.136);
+      padding-bottom: 1rem;
+    }
     .cart-summary {
       background: #f1f1f1;
       padding: 1.5rem;
@@ -771,6 +838,10 @@ width: 100%;
     .wishlist-item img {
       width: 100px;
       border-radius: 10px;
+    }
+     .wishlist-item{
+      border-bottom: 2px solid rgba(156, 155, 155, 0.136);
+      padding-bottom: 1rem;
     }
     .btn-remove {
       color: #ff4d4d !important;
@@ -810,3 +881,103 @@ width: 100%;
     /* privacy policy */
    
   
+
+    /* login form and signup form */
+     .frmdiv{
+        height: 100vh;
+    }
+    #loginfrm, #signinfrm{
+     
+        background-color: white;
+     border-radius: 10px;
+        padding: 2rem;
+        box-shadow: 0px 4px 16px rgb(82, 82, 82);
+    }
+    #loginfrm h4,  #loginfrm a, #signinfrm h4,  #signinfrm a{
+          font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+    }
+    
+     #loginfrm input, #signinfrm input{
+        padding: 0.5rem 1rem;
+        width: 100%;
+        border: none;
+        border-bottom: 2px solid grey;
+        border-radius: 10px;
+        margin-bottom: 1rem;
+     }
+       #loginfrm button, #signinfrm button{
+        width: 100%;
+        padding: 0.5rem 1rem;
+        border: none;
+        color: #fff;
+        font-weight: 600;
+          margin: 1rem 0;
+          border-radius:5px;
+        background: linear-gradient(
+    to bottom right,
+    rgba(236, 72, 153) 0%,
+    rgba(217, 70, 239) 50%,
+    rgba(99, 102, 241) 100%) ;
+       }
+   
+
+
+
+
+       /* about page */
+      .hero {
+        background: url(../images/b1.jpg) center/cover no-repeat;
+        color: white;
+        text-align: center;
+        padding: 100px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      .hero h1 {
+        font-size: 3rem;
+        font-weight: bold;
+      }
+
+      .aboutmainimg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .aboutmainimg img {
+        border-radius: 60% 40% 30% 70% / 50% 60% 40% 50%;
+        border: 5px solid #fff;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      }
+      .clgdiv{
+ position: relative;
+                width: 450px;
+                height: 250px;
+                background: linear-gradient(to bottom, #4dabbd, #3c9278);
+                border: 5px solid #fff;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      }
+      .clgdiv img{
+         position: absolute;
+                  top: 50px;
+                  right: 50px;
+                  border: 5px solid #fff;
+                  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      }
+@media (max-width:576px) {
+    .clgdiv{
+                width: 225px;
+                height: 125px;
+               
+      }
+      .clgdiv img{
+                  top: 25px;
+                  right: 25px;
+      }
+}

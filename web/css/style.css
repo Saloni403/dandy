@@ -194,9 +194,8 @@ transform: translateX(-50%);
 
 /* NAVBAR MAIN */
 .topnav {
-  position: fixed;
-  top: 3.5rem;
-  /* width: calc(100% - 2rem); */
+  position: sticky;
+  /* top: 3.5rem; */
   width: 100%;
   padding: 1rem 0;
   z-index: 99;
@@ -562,7 +561,7 @@ color: rgb(76, 76, 76);
 /* footer */
  .bsnshr{
             box-shadow: 0 4px 16px grey;
-            background-color: #000000e8; color: #fff; padding: 2rem; border-radius: 10px; text-align: center; 
+            background-color: #000000e8; color: #fff; padding: 2rem 4rem; border-radius: 10px; text-align: center; 
           }
           .bsnshr h2{
             text-decoration: underline;

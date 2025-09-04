@@ -22,7 +22,8 @@ a {
 
 .bannermain,
 .bannermain2,
-.bannermain3{
+.bannermain3,
+.bannermain4{
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -38,7 +39,16 @@ a {
 .bannermain3{
     background-image: url(../images/WhatsApp\ Image\ 2025-08-27\ at\ 4.43.17\ PM\ \(1\).jpeg);
 }
-.bannermain > div, .bannermain2 > div, .bannermain3 > div  {
+.bannermain4{
+    background: linear-gradient(
+    90deg,
+    rgba(236, 72, 153, 0.8) 0%,
+    rgba(217, 70, 239, 0.8) 50%,
+    rgba(99, 102, 241, 0.8) 100%
+  );
+
+}
+.bannermain > div, .bannermain2 > div, .bannermain3 > div, .bannermain4 > div  {
   /* background-image: linear-gradient(
     to bottom right,
     rgba(236, 72, 153, 0.2) 0%,
@@ -53,7 +63,7 @@ a {
   height: 100%;
   width: 100%;
 } */
-.bannermain2 .mbnrtxt, .bannermain3 .mbnrtxt {
+.bannermain2 .mbnrtxt, .bannermain3 .mbnrtxt , .bannermain4 .mbnrtxt{
   width: 50%;
 }
 .mbnrtxt {
@@ -142,7 +152,7 @@ a {
   .mbnrtxt p {
     font-size: 14px;
   }
-  .bannermain2 .mbnrtxt , .bannermain3 .mbnrtxt{
+  .bannermain2 .mbnrtxt , .bannermain3 .mbnrtxt, .bannermain4 .mbnrtxt{
     width: 70%;
   }
 }
@@ -150,14 +160,15 @@ a {
 @media (max-width: 576px) {
     .bannermain,
   .bannermain2,
-  .bannermain3
+  .bannermain3,
+   .bannermain4
    {
     height: 80vmax;
   }
   .mbnrtxt h1 {
     font-size: 2rem;
   }
-  .bannermain2 .mbnrtxt, .bannermain3 .mbnrtxt {
+  .bannermain2 .mbnrtxt, .bannermain3 .mbnrtxt, .bannermain4 .mbnrtxt {
     width: 100%;
   }
 }
@@ -690,13 +701,27 @@ color: #fff;
 position: absolute;
 top: 0;
 font-size: 2rem;
-background-color: #000;
-color: #fff;
 padding: 0.5rem 1rem;
-border: 4px solid #fff;
-outline: 4px solid rgb(216, 82, 149);
 border-radius: 50%;
 transform: translateY(-50%);
+}
+.contactcrds div:nth-child(1) i{
+background-color: navy;
+color: #fff;
+/* border: 4px solid blue; */
+outline: 4px solid #fff;
+}
+.contactcrds div:nth-child(2) i{
+background-color: green;
+color: #fff;
+/* border: 4px solid green; */
+outline: 4px solid #fff;
+}
+.contactcrds div:nth-child(3) i{
+background-color: #000;
+color: #fff;
+/* border: 4px solid #000; */
+outline: 4px solid #fff;
 }
 .contactcrds div h4{
   color: rgb(251, 251, 251);
@@ -796,9 +821,27 @@ width: 100%;
 #wholesalepack{
   display: none;
 }
-/* #retailpack{
-  display: block;
-} */
+        .pqt {
+            border: 2px solid grey;
+            width: fit-content;
+            padding: 0.25rem;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+        }
+
+        .pqt span {
+            padding: 0 1rem;
+        }
+
+        .pprice {
+            font-size: 1.5rem;
+        }
+        @media (max-width:475px) {
+            label, p, .pdetail li{
+                font-size: 14px;
+            }
+        }
 
 /* cart page */
  .cart-container {
@@ -924,7 +967,12 @@ width: 100%;
        }
    
 
-
+.fancytext{
+    font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
 
 
        /* about page */
@@ -937,6 +985,10 @@ width: 100%;
         align-items: center;
         justify-content: center;
         flex-direction: column;
+          font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
       }
 
       .hero h1 {

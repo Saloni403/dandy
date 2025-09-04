@@ -24,8 +24,12 @@
   <style>
     .slick-prev:before,
     .slick-next:before {
-      /* color: #000; */
+      
       display: none;
+    }
+    .slick-prev,
+    .slick-next {
+      display: none !important;
     }
   </style>
 </head>
@@ -76,7 +80,7 @@
         <div class="d-none d-lg-block navlist">
           <ul class="d-flex align-items-center justify-content-center">
             <li><a href="index.html">Home</a></li>
-            <li class="droplist"><a href="#" class="activenav">Collections<i class="bi bi-caret-right-fill"></i></a>
+            <li class="droplist"><a href="smallkids.html" class="activenav">Collections<i class="bi bi-caret-right-fill"></i></a>
               <ul class="sublist">
                 <li><a href="smallkids.html">0-5 years kids</a></li>
                 <li><a href="smallkids.html">5-12 years kids</a></li>
@@ -121,7 +125,7 @@
       <ul>
         <li><a href="index.html">Home</a></li>
 
-        <li class="droplist activemenu"><a href="#">Collections</a><i class="bi bi-caret-right-fill"></i>
+        <li class="droplist activemenu"><a href="smallkids.html">Collections</a><i class="bi bi-caret-right-fill"></i>
 
         </li>
         <ul class="sublist">
@@ -273,8 +277,17 @@
                 </div>
               </div>
               <div class="d-sm-flex align-items-center justify-content-start">
-
-                <div class="pqt " id="retailpack">
+                <div>
+                  <select name="size" id="size" >
+                    <option value="choose">Size</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                  <option value="XXL">XXL</option>
+                  </select>
+                </div>
+                <div class="pqt ms-sm-3 mt-sm-0 mt-3" id="retailpack">
                   <i class="bi bi-dash-lg"></i>
                   <span>1</span>
                   <i class="bi bi-plus-lg"></i>
@@ -299,27 +312,7 @@
                   <li>Pack contains : 4</li>
                   <li>Dispatch Time : Within 48 Hours</li>
                 </ul>
-                <script>
-                  document.querySelectorAll(".pqt").forEach(function (pqtBox) {
-                    let span = pqtBox.querySelector("span");
-                    let minus = pqtBox.querySelector(".bi-dash-lg");
-                    let plus = pqtBox.querySelector(".bi-plus-lg");
-
-                    minus.addEventListener("click", function () {
-                      let value = parseInt(span.textContent);
-                      if (value > 0) {   // prevent going below 1
-                        span.textContent = value - 1;
-                      }
-                    });
-
-                    plus.addEventListener("click", function () {
-                      let value = parseInt(span.textContent);
-                      span.textContent = value + 1;
-                    });
-                  });
-
-                </script>
-
+                
               </div>
             </div>
           </div>
@@ -328,12 +321,12 @@
   </section>
 
   <!-- our collection -->
-  <section class="ourcollection bg-white py-5">
+  <section class="ourcollection bg-white py-5 ">
     <div class="container">
       <div class="mainheading">
         <h2>Explore Our Collections</h2>
       </div>
-      <div class="row mt-5 pt-5 ourcoltn">
+      <div class="row mt-5 ourcoltn">
         <div class="col-3">
           <div class="occrd">
             <div class="crdimgs">
@@ -419,6 +412,9 @@
           </div>
         </div>
       </div>
+       <div class="bannerbtn d-flex align-items-center justify-content-center my-sm-4 mt-4">
+                <p class="">Explore Our Collection</p>
+              </div>
     </div>
   </section>
 
@@ -507,7 +503,7 @@
             <h4>Quick Links</h4>
             <ul>
               <li><a href="index.html">Home</a></li>
-              <!-- <li><a href="smallkids.html">0-5 years Kids</a></li> -->
+              <li><a href="smallkids.html">All Collections</a></li>
               <li><a href="smallkids.html">0-12 years kids</a></li>
               <li><a href="smallkids.html">Women</a></li>
               <li><a href="smallkids.html">Men</a></li>
@@ -584,6 +580,24 @@
         },
       ],
     });
+
+     document.querySelectorAll(".pqt").forEach(function (pqtBox) {
+                    let span = pqtBox.querySelector("span");
+                    let minus = pqtBox.querySelector(".bi-dash-lg");
+                    let plus = pqtBox.querySelector(".bi-plus-lg");
+
+                    minus.addEventListener("click", function () {
+                      let value = parseInt(span.textContent);
+                      if (value > 0) {   // prevent going below 1
+                        span.textContent = value - 1;
+                      }
+                    });
+
+                    plus.addEventListener("click", function () {
+                      let value = parseInt(span.textContent);
+                      span.textContent = value + 1;
+                    });
+                  });
 
     let checkbox = document.getElementById("bulkorder")
     let wholesalepack = document.getElementById("wholesalepack")

@@ -1076,16 +1076,16 @@ padding: 1rem 0;
 
 
 /* checkout page */
-        form {
+       .formdiv form {
             display: flex;
             flex-direction: column;
             
         }
         
-         form > div > i{
+        .formdiv form > div > i{
            font-size: 1.5rem;
         }
-        form input, form textarea{
+       .formdiv form input,.formdiv form textarea{
             margin-left: 1rem;
             width: 95%;
             padding: 1rem;
@@ -1094,7 +1094,7 @@ padding: 1rem 0;
             border-bottom: 2px solid grey;
             border-radius: 20px;
         }
-        form button{
+       .formdiv form button{
             background-color: #000;
             color: #fff;
             font-size: 1.2rem;

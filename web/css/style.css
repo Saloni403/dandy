@@ -1135,9 +1135,15 @@ width: 100%;
     .dashborddiv.visible{ 
          right: 0;
     }
-     
+      .myaccount div{
+        width: 100% !important;
     }
-    
+    }
+    @media (max-width:576px) {
+      .myaccount div{
+        padding:0 0.5rem !important;
+    }
+    }
     .mycurrentorder button{
         background-color: #000;
         color: #fff;
@@ -1152,9 +1158,10 @@ width: 100%;
         border: 2px solid black;
         padding:0 2rem;
         /* padding-bottom: 0; */
-        width: 50%;
+        width: 70%;
         
     }
+
    .myaccount table tr{
     border-bottom: 2px solid lightgray;
    

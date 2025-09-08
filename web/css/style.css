@@ -282,6 +282,7 @@ display: block;
 transform: rotate(90deg);
 }
 /* menu */
+
 .menu {
   background-color: #ffffff;
   position: fixed;
@@ -291,6 +292,7 @@ transform: rotate(90deg);
   height: 100vh;
   z-index: 9999;
   transition: 0.3s ease-in-out;
+   overflow-y: scroll;
 }
 .menu ul li {
   padding: 1rem;
@@ -298,6 +300,10 @@ border-bottom: 2px solid rgba(140, 139, 139, 0.295);
 }
 .menu ul li a {
   color: rgb(251, 4, 127);
+  display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
 }
 .menu ul li:hover{
   background-color: rgb(251, 4, 127);

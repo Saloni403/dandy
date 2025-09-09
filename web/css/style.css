@@ -43,29 +43,21 @@ a {
     background-image: url(../images/WhatsApp\ Image\ 2025-08-27\ at\ 4.43.17\ PM\ \(1\).jpeg);
 }
 .bannermain4{
-    background: linear-gradient(
+    /* background: linear-gradient(
     90deg,
     rgba(236, 72, 153, 0.8) 0%,
     rgba(217, 70, 239, 0.8) 50%,
     rgba(99, 102, 241, 0.8) 100%
-  );
-
+  ); */
+ background-image: url(../images/banner1.jpg);
 }
 .bannermain > div, .bannermain2 > div, .bannermain3 > div, .bannermain4 > div  {
-  /* background-image: linear-gradient(
-    to bottom right,
-    rgba(236, 72, 153, 0.2) 0%,
-    rgba(217, 70, 239, 0.2) 50%,
-    rgba(99, 102, 241, 0.2) 100%
-  ); */
+ 
   background-color: rgba(0, 0, 0, 0.2);
   height: 100%;
   width: 100%;
 }
-/* .bannermain2 > div, .bannermain3 > div  {
-  height: 100%;
-  width: 100%;
-} */
+
 .bannermain2 .mbnrtxt, .bannermain3 .mbnrtxt , .bannermain4 .mbnrtxt{
   width: 50%;
 }

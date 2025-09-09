@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+.cursor{
+  cursor: pointer;
+}
 body {
   background-color: rgba(249, 218, 223, 0.511) !important;
   /* padding:0 1rem; */
@@ -298,11 +301,14 @@ transform: rotate(90deg);
   padding:0.5rem 1rem;
 border-bottom: 2px solid rgba(140, 139, 139, 0.295);
 }
-.menu ul li a {
-  color: rgb(251, 4, 127);
+.menu .mainlist li a {
   display: flex;
       align-items: center;
       justify-content: space-between;
+}
+.menu ul li a {
+  color: rgb(251, 4, 127);
+
       width: 100%;
       font-size: 1.2rem;
 }
@@ -728,10 +734,17 @@ animation: anim 0.5s infinite ;
 .cdcrd form{
   width: 80%;
 }
+
+@media (max-width:576px) {
+  .cdcrd form{
+  width: 100%;
+}
+}
 .cdcrd form input, .cdcrd form textarea{
   width: 100%;
   padding: 1rem;
   margin: 1rem 0;
+  margin-left: 0 !important;
   border: none;
   /* border-bottom: 4px solid #fff; */
   color: #fff;
@@ -1157,13 +1170,14 @@ width: 100%;
     .myaccount div{
         border: 2px solid black;
         padding:0 2rem;
+        border-radius: 20px;
         /* padding-bottom: 0; */
         width: 70%;
         
     }
 
    .myaccount table tr{
-    border-bottom: 2px solid lightgray;
+    border-bottom: 2px solid rgba(211, 211, 211, 0.449);
    
    }
    .myaccount table tr td{
@@ -1177,21 +1191,24 @@ text-align: end;
    /* tracking details */
    .trackdetails{
     text-align: center;
-
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
    }
     .trackdetails .container{
       background-color: #fff;
-      transform: translateY(-50px);
+      /* transform: translateY(-50px); */
       padding: 2rem;
       display: flex;
       align-items: center;
       justify-content: center;
     }
-    @media (max-width:576px) {
+    /* @media (max-width:576px) {
        .trackdetails .container{
       transform: translateY(0);
        }
-    }
+    } */
      .trackdetails .container > div{
       width: fit-content;
     }

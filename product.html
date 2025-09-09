@@ -121,7 +121,7 @@
         <i class="bi bi-x-lg menuclose"></i>
       </div>
 
-      <ul>
+      <ul class="mainlist">
         <li><a href="index.html">Home</a></li>
 
         <li class="activemenu"><a href="smallkids.html">Collections</a></li>
@@ -140,7 +140,8 @@
         <li><a href="about.html">About Us</a></li>
 
         <li><a href="contact.html">Contact Us</a></li>
-
+</ul>
+<ul>
         <li>
           <a href="cart.html"><i class="bi bi-cart-check"></i> Cart</a>
         </li>
@@ -328,11 +329,11 @@
       </div>
       <div class="row mt-5 ourcoltn">
         <div class="col-3">
-          <div class="occrd">
+          <div class="occrd cursor" onclick="location.href='product.html'">
             <div class="crdimgs">
               <img src="web/images/shopby/kid.jpg" class="img-fluid imgback" alt="" />
               <img src="web/images/shopby/xskid.webp" class="img-fluid imgtop" alt="" />
-              <i class="bi bi-heart crdlikebtn"></i>
+              <i class="bi bi-heart crdlikebtn" onclick="addtowishlist(this, event)"></i>
             </div>
             <div class="crdpara p-sm-3 p-2">
               <p>First Love Silk Print Kimono</p>
@@ -342,11 +343,11 @@
           </div>
         </div>
         <div class="col-3">
-          <div class="occrd">
+          <div class="occrd cursor" onclick="location.href='product.html'">
             <div class="crdimgs">
               <img src="web/images/shopby/girl.jpg" class="img-fluid imgback" alt="" />
               <img src="web/images/shopby/men.jpg" class="img-fluid imgtop" alt="" />
-              <i class="bi bi-heart crdlikebtn"></i>
+              <i class="bi bi-heart crdlikebtn" onclick="addToWishlist(this, event)"></i>
             </div>
             <div class="crdpara p-sm-3 p-2">
               <p>First Love Silk Print Kimono</p>
@@ -356,11 +357,11 @@
           </div>
         </div>
         <div class="col-3">
-          <div class="occrd">
+          <div class="occrd cursor" onclick="location.href='product.html'">
             <div class="crdimgs">
               <img src="web/images/shopby/xskid.webp" class="img-fluid imgback" alt="" />
               <img src="web/images/shopby/kid.jpg" class="img-fluid imgtop" alt="" />
-              <i class="bi bi-heart crdlikebtn"></i>
+              <i class="bi bi-heart crdlikebtn" onclick="addToWishlist(this, event)"></i>
             </div>
             <div class="crdpara p-sm-3 p-2">
               <p>First Love Silk Print Kimono</p>
@@ -370,11 +371,11 @@
           </div>
         </div>
         <div class="col-3">
-          <div class="occrd">
+          <div class="occrd cursor" onclick="location.href='product.html'">
             <div class="crdimgs">
               <img src="web/images/shopby/men.jpg" class="img-fluid imgback" alt="" />
               <img src="web/images/shopby/girl.jpg" class="img-fluid imgtop" alt="" />
-              <i class="bi bi-heart crdlikebtn"></i>
+              <i class="bi bi-heart crdlikebtn" onclick="addToWishlist(this, event)"></i>
             </div>
             <div class="crdpara p-sm-3 p-2">
               <p>First Love Silk Print Kimono</p>
@@ -384,11 +385,11 @@
           </div>
         </div>
         <div class="col-3">
-          <div class="occrd">
+          <div class="occrd cursor" onclick="location.href='product.html'">
             <div class="crdimgs">
               <img src="web/images/shopby/xskid.webp" class="img-fluid imgback" alt="" />
               <img src="web/images/shopby/men.jpg" class="img-fluid imgtop" alt="" />
-              <i class="bi bi-heart crdlikebtn"></i>
+              <i class="bi bi-heart crdlikebtn" onclick="addToWishlist(this, event)"></i>
             </div>
             <div class="crdpara p-sm-3 p-2">
               <p>First Love Silk Print Kimono</p>
@@ -398,11 +399,11 @@
           </div>
         </div>
         <div class="col-3">
-          <div class="occrd">
+          <div class="occrd cursor" onclick="location.href='product.html'">
             <div class="crdimgs">
               <img src="web/images/shopby/girl.jpg" class="img-fluid imgback" alt="" />
               <img src="web/images/shopby/kid.jpg" class="img-fluid imgtop" alt="" />
-              <i class="bi bi-heart crdlikebtn"></i>
+              <i class="bi bi-heart crdlikebtn" onclick="addToWishlist(this, event)"></i>
             </div>
             <div class="crdpara p-sm-3 p-2">
               <p>First Love Silk Print Kimono</p>
@@ -420,14 +421,14 @@
 
   <!-- icons for whatsapp, call, mail -->
 
-  <section>
-    <div class="wic">
+<section>
+    <div class="wic cursor">
       <i class="bi bi-whatsapp"></i>
     </div>
-    <div class="tic">
+    <div class="tic cursor">
       <i class="bi bi-telephone"></i>
     </div>
-    <div class="mic">
+    <div class="mic cursor">
       <i class="bi bi-envelope"></i>
     </div>
   </section>
@@ -444,35 +445,34 @@
         </p>
 
       </div>
-      <style>
-
-      </style>
+     
       <div class="d-flex align-items-center justify-content-center mt-3">
         <div class="bsnshr">
           <h2>
             Business Hours
           </h2>
           <p>
-            Monday to Friday
+            Monday to Sunday
           </p>
           <h4>
-            7:30 AM - 8:00 PM
+            10:00 AM - 9:00 PM
           </h4>
+          <p>(Online and Offline)</p>
           <hr>
           <p>
-            Saturday to Sunday
+            Wednesday off 
           </p>
-          <h4>
-            7:30 AM - 8:00 PM
-          </h4>
+          <p>
+            (For Offline Only)
+          </p>
         </div>
       </div>
       <div class="d-flex align-items-center justify-content-center flex-column mt-3">
         <h2>Follow Us:</h2>
         <div class="fusicons mt-3">
-          <i class="bi bi-facebook" style="background-color: rgb(24, 119, 242); color: #fff"></i>
-          <i class="bi bi-twitter-x" style="background-color: rgb(0, 0, 0); color: #fff; margin: 0 1rem;"></i>
-          <i class="bi bi-instagram" style="
+          <i class="bi bi-facebook cursor " style="background-color: rgb(24, 119, 242); color: #fff"></i>
+          <i class="bi bi-twitter-x cursor" style="background-color: rgb(0, 0, 0); color: #fff; margin: 0 1rem;"></i>
+          <i class="bi bi-instagram cursor" style="
                     background: linear-gradient(
                       45deg,
                       #f58529,
@@ -528,7 +528,7 @@
       </div>
       <div class="row text-center">
         <p class="mb-0 ">
-          © 2025 D&amp;Y Trending Collections. All rights reserved.<a href="https://tssgtech.com/" class="text-white">
+          © 2025 <span class="fancytext">D&Y</span> Trending Collections. All rights reserved.<a href="https://tssgtech.com/" class="text-white">
             Design by Tssg-Tech</a>
         </p>
       </div>

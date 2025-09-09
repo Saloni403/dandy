@@ -22,8 +22,25 @@ dropList.addEventListener("click", () => {
 });
 
 
-
-
+function addToCart(){
+  alert("Item is added to your cart")
+  event.stopPropagation();
+}
+function addToWishlist(el, event){
+    event.stopPropagation(); // prevent product redirect
+    if(el.classList.contains("bi-heart")){
+        el.classList.remove("bi-heart");
+        el.classList.add("bi-heart-fill");
+        el.style.color = "rgb(251, 4, 127)"; // fill color
+        alert("Item is added to your wishlist")
+    }
+    else{
+        el.classList.remove("bi-heart-fill");
+        el.classList.add("bi-heart");
+        el.style.color = ""; // reset color
+        alert("Item is removed from your wishlist")
+    }
+}
 
 
 

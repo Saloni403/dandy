@@ -230,7 +230,7 @@ transform: translateX(-50%);
   color: rgb(251, 4, 127) !important;
 }
 .mview a{
-margin-left: 10px;
+margin-right: 10px;
 font-size: 1.5rem;
  color: #000;
 }
@@ -239,6 +239,9 @@ font-size: 1.5rem;
 }
 .mview i:hover{
     color: rgb(251, 4, 127) !important;
+}
+.menuopen{
+  font-size: 1.5rem;
 }
 .droplist{
   position: relative;
@@ -290,7 +293,7 @@ transform: rotate(90deg);
    overflow-y: scroll;
 }
 .menu ul li {
-  padding:0.5rem 1rem;
+  padding:0.25rem 1rem;
 border-bottom: 2px solid rgba(140, 139, 139, 0.295);
 }
 .menu .mainlist li a {

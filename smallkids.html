@@ -80,11 +80,11 @@
             </ul>
           </div>
           <div class="d-lg-none mview">
-            <i class="bi bi-list menuopen"  ></i>
-            <a href="cart.html"><i class="bi bi-cart-check" ></i></a>
-            <a href="addlike.html"><i class="bi bi-heart" ></i></a>
-             <a href="login.html"><i class="bi bi-person-circle" ></i></a>
-          </div>
+          <a href="cart.html"><i class="bi bi-cart-check"></i></a>
+           <i class="bi bi-list menuopen"></i>
+          <!-- <a href="addlike.html"><i class="bi bi-heart"></i></a>
+          <a href="login.html"><i class="bi bi-person-circle"></i></a> -->
+        </div>
         </div>
       </div>
   </section>
@@ -103,16 +103,16 @@
 
         <li class="activemenu"><a href="smallkids.html">Collections</a></li>
           <li><a href="smallkids.html">0-12 years kids
-           <img src="web/images/categ/menuimg3-removebg-preview.png" width="50" alt=""></a></li>
+           <img src="web/images/categ/menuimg3-removebg-preview.png" width="30" alt=""></a></li>
           <li><a href="smallkids.html">Women
-           <img src="web/images/categ/menuimg2-removebg-preview.png" width="50" alt=""></a></li>
+           <img src="web/images/categ/menuimg2-removebg-preview.png" width="30" alt=""></a></li>
           <li><a href="smallkids.html">Men 
-            <img src="web/images/categ/menuimg1-removebg-preview.png" width="50" alt="">
+            <img src="web/images/categ/menuimg1-removebg-preview.png" width="30" alt="">
           </a></li>
  <li><a href="smallkids.html">LED T-shirts
-           <img src="web/images/shopby/WhatsApp Image 2025-09-05 at 5.15.32 PM.jpeg" width="50" alt=""></a></li>
+           <img src="web/images/categ/menuimg1-removebg-preview.png" width="30" alt=""></a></li>
           <li><a href="smallkids.html">Neon T-shirts 
-            <img src="web/images/shopby/WhatsApp Image 2025-09-08 at 10.44.58 AM.jpeg" width="50" alt="">
+            <img src="web/images/categ/menuimg1-removebg-preview.png" width="30" alt="">
           </a></li>
         <li><a href="about.html">About Us</a></li>
 
@@ -168,6 +168,18 @@
         <div class="mx-2 cursor">
           <img src="web/images/categ/categ2.jpg" class="img-fluid" alt="">
           <p>Shirts</p>
+        </div>
+      </div>
+       <div class="col-2">
+        <div class="mx-2 cursor">
+          <img src="web/images/categ/categ6.jpeg" class="img-fluid" alt="">
+          <p>Jeans</p>
+        </div>
+      </div>
+       <div class="col-2">
+        <div class="mx-2 cursor">
+          <img src="web/images/categ/categ2.jpg" class="img-fluid" alt="">
+          <p>Kurtas</p>
         </div>
       </div>
       
@@ -599,8 +611,7 @@
     const rangeInputmax = document.getElementById('range1');
     const rangeOutputmax = document.getElementById('rangeValuemax');
 
-    const disInputmin = document.getElementById('range2');
-    const disOutputmin = document.getElementById('disValuemax');
+
 
     // Set initial value
     rangeOutputmax.textContent = "Min: 500 - Max: " + rangeInputmax.value;
@@ -609,11 +620,7 @@
       rangeOutputmax.textContent ="Min: 500 - Max: " + this.value;
     });
 
-    disOutputmin.textContent ="Min: 0 - Max: " + disInputmin.value;
-
-    disInputmin.addEventListener('input', function () {
-      disOutputmin.textContent ="Min: 0 - Max: " + this.value;
-    });
+   
 
  $(".autoplay").slick({
         slidesToShow: 6,

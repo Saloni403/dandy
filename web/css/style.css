@@ -178,8 +178,9 @@ border-radius: 50px;
 position: absolute;
 transform: translateX(-50%);
 }
-.toppestnav a,
-.toppestnav p {
+.toppestnav 
+ {
+ 
   color: purple;
 }
 .topicns i {
@@ -293,8 +294,11 @@ transform: rotate(90deg);
    overflow-y: scroll;
 }
 .menu ul li {
-  padding:0.25rem 1rem;
+  padding:0 1rem;
+  height: 80px;
 border-bottom: 2px solid rgba(140, 139, 139, 0.295);
+display: flex;
+align-items: center;
 }
 .menu .mainlist li a {
   display: flex;
@@ -648,6 +652,7 @@ footer {
 }
 .bottom a{
 color: #000;
+font-weight: 500;
 }
 .bottom h4{
   text-decoration: underline;

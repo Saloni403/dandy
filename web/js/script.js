@@ -14,36 +14,60 @@ document.querySelector(".menuopen").addEventListener("click",()=>{
     document.querySelector(".menu").style.right="0"
 })
 
-const dropList = document.querySelector(".menu .droplist");
-const subList = document.querySelector(".menu .sublist");
-
-dropList.addEventListener("click", () => {
-  subList.classList.toggle("active");
-});
 
 
-function addToCart(){
-  alert("Item is added to your cart")
-  event.stopPropagation();
-}
-function addToWishlist(el, event){
-    event.stopPropagation(); // prevent product redirect
-    if(el.classList.contains("bi-heart")){
-        el.classList.remove("bi-heart");
-        el.classList.add("bi-heart-fill");
-        el.style.color = "rgb(251, 4, 127)"; // fill color
-        alert("Item is added to your wishlist")
-    }
-    else{
-        el.classList.remove("bi-heart-fill");
-        el.classList.add("bi-heart");
-        el.style.color = ""; // reset color
-        alert("Item is removed from your wishlist")
-    }
-}
+const favicon = document.createElement('link');
+    favicon.rel = 'icon'; // Set the relationship to 'icon'
+    favicon.type = 'image/png'; // Specify the type of the favicon
+    favicon.href = 'web/images/dndylogo.png';
+ document.head.appendChild(favicon);
+
+let instagram=document.querySelectorAll(".bi-instagram")
+instagram.forEach((insta)=>{
+insta.addEventListener("click",()=>{
+    window.open("https://www.instagram.com/dy_trending_collection/", "_blank");
+})
+})
+
+let whatsapp=document.querySelectorAll(".bi-whatsapp")
+whatsapp.forEach((wapp)=>{
+wapp.addEventListener("click",()=>{
+    window.open("https://wa.me/919818464679", "_blank");
+})
+})
+
+let facebook=document.querySelectorAll(".bi-facebook")
+facebook.forEach((fb)=>{
+fb.addEventListener("click",()=>{
+    window.open("https://www.fb.com", "_blank");
+})
+})
+
+let twitter=document.querySelectorAll(".bi-twitter-x")
+twitter.forEach((twit)=>{
+twit.addEventListener("click",()=>{
+    window.open("https://www.twitter.com", "_blank");
+})
+})
 
 
 
+let call=document.querySelectorAll(".bi-telephone")
+call.forEach((parent)=>{
+let parentDiv = parent.parentElement
+console.log(parentDiv);
+parentDiv.style.cursor= "pointer"
+parentDiv.addEventListener("click",()=>{
+    window.location.href="tel:+919818464679"
+})
+})
 
-
-
+let email=document.querySelectorAll(".bi-envelope")
+email.forEach((mail)=>{
+let parentDiv = mail.parentElement
+console.log(parentDiv);
+parentDiv.style.cursor= "pointer"
+parentDiv.addEventListener("click",()=>{
+     window.location.href = "mailto:info@d&ytrending.com"; 
+})
+})

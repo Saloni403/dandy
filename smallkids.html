@@ -600,6 +600,7 @@
     </div>
   </section>
   <script src="web/js/script.js"></script>
+  <script src="web/js/addtocart.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
     crossorigin="anonymous"></script>
@@ -607,21 +608,6 @@
     integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script>
-    // This is an example script, please modify as needed
-    const rangeInputmax = document.getElementById('range1');
-    const rangeOutputmax = document.getElementById('rangeValuemax');
-
-
-
-    // Set initial value
-    rangeOutputmax.textContent = "Min: 500 - Max: " + rangeInputmax.value;
-
-    rangeInputmax.addEventListener('input', function () {
-      rangeOutputmax.textContent ="Min: 500 - Max: " + this.value;
-    });
-
-   
-
  $(".autoplay").slick({
         slidesToShow: 6,
         slidesToScroll: 1,
@@ -655,12 +641,6 @@
         ]
       });
    
-    // filter 
-document.querySelector(".bi-list-columns-reverse").addEventListener("click",()=>{
-document.querySelector("#accordionExample").classList.toggle("filteropen")
-})
-
-
 
 function addToWishlist(el, event){
     event.stopPropagation(); // prevent product redirect
